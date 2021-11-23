@@ -7,3 +7,7 @@
 - Make a script that automatically downloads the needed data for the categories.
 
 - Make the web UI (should be statically hosted so that people can run it without a server).
+
+## Credits:
+
+- https://github.com/pquentin/wiktionary-translations/
