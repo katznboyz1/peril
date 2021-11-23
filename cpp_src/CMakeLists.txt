@@ -22,4 +22,4 @@ add_executable(peril main.cpp)
 add_subdirectory(libcurl_headers)
 
 target_link_libraries(peril imported_libraries)
-target_link_libraries(peril libcurl_headers)
+target_link_libraries(peril libcurl_h)

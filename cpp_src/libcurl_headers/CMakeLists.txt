@@ -8,4 +8,4 @@ set(libcurl
     urlapi.h
 )
 
-add_library(libcurl_headers ${libcurl})
+add_library(libcurl_h ${libcurl})
