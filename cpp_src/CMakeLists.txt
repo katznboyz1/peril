@@ -13,18 +13,13 @@ set(src
 
 set(lib
     fetch_data_LANG_FR.hpp
-
-    lib/curl.h
-    lib/curlver.h
-    lib/easy.h
-    lib/multi.h
-    lib/options.h
-    lib/system.h
-    lib/urlapi.h
 )
 
 add_library(imported_libraries ${src} ${lib})
 
 add_executable(peril main.cpp)
 
+add_subdirectory(libcurl_headers)
+
 target_link_libraries(peril imported_libraries)
+target_link_libraries(peril libcurl_headers)

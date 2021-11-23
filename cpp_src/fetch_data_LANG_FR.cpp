@@ -1,6 +1,6 @@
 #include <string>
 
-#include "lib/curl.h"
+#include "libcurl_headers/curl.h"
 
 #include "fetch_data_LANG_FR.hpp"
 
