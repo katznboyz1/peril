@@ -12,3 +12,7 @@
 
 - https://github.com/pquentin/wiktionary-translations/
 - https://github.com/curl/curl
+
+## Setup:
+
+*Not complete.*
