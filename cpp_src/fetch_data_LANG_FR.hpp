@@ -10,5 +10,4 @@ const std::string LANG_FR_DATA_VERB_VOCABULARY = "data.verb_vocabulary.lang.fr.t
 const std::string LANG_FR_DATA_SIMPLE_TRIVIA = "data.simple_trivia.lang.fr.txt";
 const std::string LANG_FR_DATA_CONVERSATION_PROMPTS = "data.conversation_prompts.lang.fr.txt";
 
-
 void fetch_data_LANG_FR_all(std::string category_data_path) {}
