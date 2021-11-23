@@ -1,4 +1,4 @@
 *.o
 *.tmp
 *.old
-cpp_build
+build
