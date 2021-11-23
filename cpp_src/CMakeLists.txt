@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED 1)
 
 set(src
-    main.cpp
     fetch_data_LANG_FR.cpp
 )
 
@@ -22,4 +21,8 @@ set(lib
     lib/urlapi.h
 )
 
-add_executable(peril ${src} ${lib})
+add_library(imported_libraries ${lib} ${src})
+
+add_executable(peril main.cpp)
+
+target_link_libraries(peril imported_libraries)
