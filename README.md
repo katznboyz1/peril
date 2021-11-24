@@ -13,6 +13,12 @@
 - https://github.com/pquentin/wiktionary-translations/
 - https://github.com/curl/curl
 
-## Setup:
+## Build From Scratch:
 
-*Not complete.*
+- Clone this repo, then make a new folder in the same directory as the cloned repo called *"peril"*.
+
+- CD into the cloned repo, then run `cmake ../peril`.
+
+- CD into `../peril` and then run `cmake --build .`.
+
+- Run `./peril`. If everything returns 0, then all your files are there!
