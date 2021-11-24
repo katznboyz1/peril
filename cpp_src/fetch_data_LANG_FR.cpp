@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <curl/curl.h>
 #include <iostream>
+#include <fstream>
 
 #include "stdfunctions.hpp"
 
@@ -45,8 +46,38 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
         fclose(file);
 
         if (res != CURLE_OK) return 1;
-        
+
     } else return 2;
+
+    // parse the file into different sections
+    std::string nouns;
+    std::string adjectives;
+    std::string verbs;
+    std::string adverbs;
+
+    std::ifstream dictionary_file(output_path_char);
+    std::string line;
+
+    while (std::getline(dictionary_file, line)) {
+
+        // will be in the format [word_fr, word_type_fr, TR-FR-EN, word_en, word_type_en]
+        std::vector<std::string> split_line = string_split(line, ';');
+        std::string word_type = split_line[1];
+
+        if (word_type.compare("S")) { // noun
+
+
+        } else if (word_type.compare("J")) { // adjective
+
+
+        } else if (word_type.compare("V")) { // verb
+
+
+        } else if (word_type.compare("D")) { // adverb
+
+
+        }
+    }
 
     return 0;
 }
