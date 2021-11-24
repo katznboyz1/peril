@@ -1,0 +1,14 @@
+{
+    "quiz_data":{
+        "Noun Vocabulary":"data.vocab_nouns.lang.fr.txt",
+        "Adjective Vocabulary":"data.vocab_adjectives.lang.fr.txt",
+        "Phrases":"data.phrases.lang.fr.txt",
+        "Verb Conjugations":"data.verb_conjugations.lang.fr.txt",
+        "Verb Vocabulary":"data.verb_vocabulary.lang.fr.txt",
+        "Trivia":"data.simple_trivia.lang.fr.txt",
+        "Conversational Prompts":"data.conversation_prompts.lang.fr.txt"
+    },
+    "quiz_version":"1.0",
+    "quiz_name":"French",
+    "quiz_authors":["katznboyz1"]
+}
