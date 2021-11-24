@@ -11,14 +11,26 @@ set(src
     fetch_data_LANG_FR.cpp
 )
 
-set(lib
+set(lib_peril
     fetch_data_LANG_FR.hpp
 )
 
-add_library(imported_libraries ${src} ${lib})
+set(lib_curl
+    curlver.h
+    easy.h
+    libcurl.h
+    mprintf.h
+    multi.h
+    options.h
+    stdcheaders.h
+    system.h
+    typecheck-gcc.h
+    urlapi.h
+)
+
+add_library(lib_peril_lib ${src} ${lib_peril_lib})
+add_library(lib_curl_lib ${lib_curl})
 
 add_executable(peril main.cpp)
 
-add_subdirectory(libcurl_headers)
-
-target_link_libraries(peril imported_libraries libcurl_h)
+target_link_libraries(peril lib_peril_lib lib_curl_lib)

@@ -22,7 +22,7 @@
  *
  ***************************************************************************/
 
-#include "curl.h"
+#include "libcurl.h"
 
 #ifdef  __cplusplus
 extern "C" {
