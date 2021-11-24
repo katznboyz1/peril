@@ -22,4 +22,4 @@ target_link_libraries(peril source)
 
 target_link_libraries(peril -lcurl)
 
-set_target_properties(peril PROPERTIES COMPILE_OPTIONS "-O2;")
+set_target_properties(peril PROPERTIES COMPILE_OPTIONS "-O2;-std=c++17;")
