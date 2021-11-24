@@ -4,6 +4,7 @@
     Should have a bunch of `const std::string` variables for the different paths used by this language
     Each path should be in the format `data.CATEGORY_NAME.lang.LANGUAGE_CODE.txt`
     The file must be a `.txt` file, and it should not include any slashes so that the fetch_data_LANG_XXX_all function can handle the placement
+    There must be 6 categories
 */
 const std::string LANG_TEMPLATE_DATA_EXAMPLE = "data.example.lang.template.txt";
 
