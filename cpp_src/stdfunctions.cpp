@@ -19,6 +19,8 @@ std::vector<std::string> string_split(std::string str, char delimiter) {
         if (str[i] == delimiter) {
 
             split_strings.push_back(last_string);
+            last_string = "";
+            
         } else {
 
             last_string += str[i];

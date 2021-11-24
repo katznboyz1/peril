@@ -68,18 +68,19 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
         std::string word_type = split_line[1];
         std::string word_FR = split_line[0];
         std::string word_EN = split_line[3];
+        std::string actual_line_output_contents = split_line[0] + ";" + split_line[3];
 
         if (word_type.compare("S")) { // noun
 
-            lang_fr_nouns_stream << line << "\n";
+            lang_fr_nouns_stream << actual_line_output_contents << "\n";
 
         } else if (word_type.compare("J")) { // adjective
 
-            lang_fr_adjectives_stream << line << "\n";
+            lang_fr_adjectives_stream << actual_line_output_contents << "\n";
 
         } else if (word_type.compare("V")) { // verb
 
-            lang_fr_verbs_stream << line << "\n";
+            lang_fr_verbs_stream << actual_line_output_contents << "\n";
 
         } // ignore adverbs for now
     }
