@@ -125,6 +125,7 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
             for (int i = 0; i < verb_conjugation_list_file_columns.size(); i++) {
 
                 if (i > current_parsed_verb_conjugation_line.size() - 1) break;
+                if (current_parsed_verb_conjugation_line[i].empty()) break;
 
                 std::string column_value_comma_replaced = verb_conjugation_list_file_columns[i];
                 column_value_comma_replaced = std::regex_replace(column_value_comma_replaced, std::regex(","), "/");
