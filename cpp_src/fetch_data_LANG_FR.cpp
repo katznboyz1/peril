@@ -21,7 +21,8 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
     CURL *curl;
     CURLcode res;
 
-    std::string output_path = tmp_download_path + category_data_path;
+    std::string output_path = tmp_download_path + "LANG_FR_all.txt";
+    char* output_path_char = const_cast<char*>(output_path.c_str());
     
     curl = curl_easy_init();
 
@@ -30,12 +31,12 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
         FILE *file;
 
         // fetch the entire dictionary and output it to a file
-        file = fopen(const_cast<char*>(output_path.c_str()), "wb");
+        file = fopen(output_path_char, "wb");
 
+        curl_easy_setopt(curl, CURLOPT_FAILONERROR, 1);
         curl_easy_setopt(curl, CURLOPT_URL, "https://raw.githubusercontent.com/pquentin/wiktionary-translations/master/frwiktionary-20140612-euradicfmt.csv");
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, file);
-        curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
         curl_easy_setopt(curl, CURLOPT_TIMEOUT, curl_timeout_seconds);
 
         res = curl_easy_perform(curl);
