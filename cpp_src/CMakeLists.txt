@@ -17,6 +17,6 @@ set_target_properties(lib_peril_lib PROPERTIES LINKER_LANGUAGE CXX)
 
 target_link_libraries(peril lib_peril_lib)
 
-set_target_properties(peril PROPERTIES COMPILE_OPTIONS "-O2;-v;-std=c++17;-lcurl;")
+target_link_libraries(peril -lcurl)
 
-install(TARGETS peril DESTINATION "peril-${PERIL_VERSION}")
+set_target_properties(peril PROPERTIES COMPILE_OPTIONS "-O2;")

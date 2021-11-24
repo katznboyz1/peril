@@ -1,4 +1,5 @@
 #include <string>
+#include <stdio.h>
 #include <curl/curl.h>
 
 #include "fetch_data_LANG_FR.hpp"
