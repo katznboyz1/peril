@@ -16,7 +16,7 @@ int main() {
 
     std::cout << "fetch_data_LANG_FR_all() = " << std::to_string(fetch_data_LANG_FR_all(CATEGORY_DATA_PATH, TMP_DOWNLOAD_PATH, CURL_TIMEOUT_SECONDS)) << endl;
 
-    std::cout << "0" << endl;
+    std::cout << "main() = 0" << endl;
 
     return 0;
 }
