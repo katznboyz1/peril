@@ -70,19 +70,10 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
         std::string word_EN = split_line[3];
         std::string actual_line_output_contents = split_line[0] + ";" + split_line[3];
 
-        if (word_type.compare("S")) { // noun
-
-            lang_fr_nouns_stream << actual_line_output_contents << "\n";
-
-        } else if (word_type.compare("J")) { // adjective
-
-            lang_fr_adjectives_stream << actual_line_output_contents << "\n";
-
-        } else if (word_type.compare("V")) { // verb
-
-            lang_fr_verbs_stream << actual_line_output_contents << "\n";
-
-        } // ignore adverbs for now
+        // unfortunately else if statements break this, I will investigate later.
+        if (word_type.compare("S")) lang_fr_nouns_stream << actual_line_output_contents << "\n";
+        if (word_type.compare("V")) lang_fr_verbs_stream << actual_line_output_contents << "\n";
+        if (word_type.compare("J")) lang_fr_adjectives_stream << actual_line_output_contents << "\n";
     }
 
     lang_fr_nouns_stream.close();
