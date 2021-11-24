@@ -45,7 +45,8 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
         fclose(file);
 
         if (res != CURLE_OK) return 1;
-    }
+        
+    } else return 2;
 
     return 0;
 }
