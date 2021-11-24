@@ -19,38 +19,60 @@ using namespace std;
 
 int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::string &tmp_download_path, const int &curl_timeout_seconds) {
 
-    CURL *curl;
+    CURL *curl_1;
+    CURL *curl_2;
     CURLcode res;
 
-    std::string output_path = tmp_download_path + "LANG_FR_all.txt";
-    char* output_path_char = const_cast<char*>(output_path.c_str());
+    std::string output_path_str_1 = tmp_download_path + "LANG_FR_1.txt";
+    std::string output_path_str_2 = tmp_download_path + "LANG_FR_2.txt";
+
+    char* output_path_char_1 = const_cast<char*>(output_path_str_1.c_str());
+    char* output_path_char_2 = const_cast<char*>(output_path_str_2.c_str());
     
-    curl = curl_easy_init();
+    curl_1 = curl_easy_init();
+    curl_2 = curl_easy_init();
 
-    if (curl) {
-
-        FILE *file;
+    if (curl_1 && curl_2) {
+        
+        FILE *file_1;
+        FILE *file_2;
 
         // fetch the entire dictionary and output it to a file
-        file = fopen(output_path_char, "wb");
+        file_1 = fopen(output_path_char_1, "wb");
 
-        curl_easy_setopt(curl, CURLOPT_FAILONERROR, 1);
-        curl_easy_setopt(curl, CURLOPT_URL, "https://raw.githubusercontent.com/pquentin/wiktionary-translations/master/frwiktionary-20140612-euradicfmt.csv");
-        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
-        curl_easy_setopt(curl, CURLOPT_WRITEDATA, file);
-        curl_easy_setopt(curl, CURLOPT_TIMEOUT, curl_timeout_seconds);
+        curl_easy_setopt(curl_1, CURLOPT_FAILONERROR, 1);
+        curl_easy_setopt(curl_1, CURLOPT_URL, "https://raw.githubusercontent.com/pquentin/wiktionary-translations/master/frwiktionary-20140612-euradicfmt.csv");
+        curl_easy_setopt(curl_1, CURLOPT_WRITEFUNCTION, write_data);
+        curl_easy_setopt(curl_1, CURLOPT_WRITEDATA, file_1);
+        curl_easy_setopt(curl_1, CURLOPT_TIMEOUT, curl_timeout_seconds);
 
-        res = curl_easy_perform(curl);
-        curl_easy_cleanup(curl);
+        res = curl_easy_perform(curl_1);
+        curl_easy_cleanup(curl_1);
 
-        fclose(file);
+        fclose(file_1);
 
-        if (res != CURLE_OK) return 1;
+        if (res != CURLE_OK) return 2;
 
-    } else return 2;
+        // fetch the entire dictionary and output it to a file
+        file_2 = fopen(output_path_char_2, "wb");
+
+        curl_easy_setopt(curl_2, CURLOPT_FAILONERROR, 1);
+        curl_easy_setopt(curl_2, CURLOPT_URL, "https://raw.githubusercontent.com/ianmackinnon/inflect/master/french-verb-conjugation.csv");
+        curl_easy_setopt(curl_2, CURLOPT_WRITEFUNCTION, write_data);
+        curl_easy_setopt(curl_2, CURLOPT_WRITEDATA, file_2);
+        curl_easy_setopt(curl_2, CURLOPT_TIMEOUT, curl_timeout_seconds);
+
+        res = curl_easy_perform(curl_2);
+        curl_easy_cleanup(curl_2);
+
+        fclose(file_2);
+
+        if (res != CURLE_OK) return 3;
+
+    } else return 1;
 
     // parse the file into different sections
-    std::ifstream dictionary_file(output_path_char);
+    std::ifstream dictionary_file(output_path_char_1);
     std::string line;
 
     ofstream lang_fr_nouns_stream;
@@ -77,6 +99,12 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
     lang_fr_nouns_stream.close();
     lang_fr_adjectives_stream.close();
     lang_fr_verbs_stream.close();
+
+    // delete (or try to delete) the tmp files
+    // dont check the return value, what happens happens
+    // its in /tmp/ so itll be deleted later anyhow
+    remove(output_path_char_1);
+    remove(output_path_char_2);
 
     return 0;
 }

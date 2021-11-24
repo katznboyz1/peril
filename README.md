@@ -12,6 +12,7 @@
 
 - https://github.com/pquentin/wiktionary-translations/
 - https://github.com/curl/curl
+- https://github.com/ianmackinnon/inflect
 
 ## Build From Scratch:
 
