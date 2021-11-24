@@ -88,7 +88,7 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
         // will be in the format [word_fr, word_type_fr, TR-FR-EN, word_en, word_type_en]
         std::vector<std::string> split_line = string_split(line, ';');
         std::string word_type = split_line[1];
-        std::string actual_line_output_contents = split_line[0] + "|" + split_line[3];
+        std::string actual_line_output_contents = "What is the meaning of " + split_line[0] + " in English?" + "|" + split_line[3];
 
         // unfortunately else if statements break this, I will investigate later.
         if (word_type.compare("S")) lang_fr_nouns_stream << actual_line_output_contents << "\n";
