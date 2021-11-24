@@ -1,6 +1,5 @@
 #include <string>
-
-#include "libcurl.h"
+#include <curl/curl.h>
 
 #include "fetch_data_LANG_FR.hpp"
 
@@ -24,7 +23,7 @@ int fetch_data_LANG_FR_all(std::string category_data_path, std::string tmp_downl
         curl_easy_setopt(curl, CURLOPT_URL, "https://raw.githubusercontent.com/pquentin/wiktionary-translations/master/frwiktionary-20140612-euradicfmt.csv");
         res = curl_easy_perform(curl);
 
-        if (res != CURLE_OK) return -1;
+        if (res != CURLE_OK) return 1;
     }
 
     return 0;
