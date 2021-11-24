@@ -73,7 +73,7 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
 
     // parse the file into different sections
     std::ifstream dictionary_file(output_path_char_1);
-    std::string line;
+    std::string line_1;
 
     ofstream lang_fr_nouns_stream;
     ofstream lang_fr_adjectives_stream;
@@ -83,10 +83,10 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
     lang_fr_adjectives_stream.open(category_data_path + LANG_FR_DATA_VOCAB_ADJECTIVES);
     lang_fr_verbs_stream.open(category_data_path + LANG_FR_DATA_VERB_VOCABULARY);
 
-    while (std::getline(dictionary_file, line)) {
+    while (std::getline(dictionary_file, line_1)) {
 
         // will be in the format [word_fr, word_type_fr, TR-FR-EN, word_en, word_type_en]
-        std::vector<std::string> split_line = string_split(line, ';');
+        std::vector<std::string> split_line = string_split(line_1, ';');
         std::string word_type = split_line[1];
         std::string actual_line_output_contents = "What is the meaning of " + split_line[0] + " in English?" + "|" + split_line[3];
 
@@ -99,6 +99,38 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
     lang_fr_nouns_stream.close();
     lang_fr_adjectives_stream.close();
     lang_fr_verbs_stream.close();
+
+    std::ifstream verb_conjugation_list_file(output_path_char_2);
+    std::string line_2;
+
+    int line_count_2 = 0;
+
+    std::vector<std::string> verb_conjugation_list_file_columns;
+
+    ofstream lang_fr_verb_conjugations_stream;
+
+    lang_fr_verb_conjugations_stream.open(category_data_path + LANG_FR_DATA_VERB_CONJUGATIONS);
+
+    while (std::getline(verb_conjugation_list_file, line_2)) {
+
+        if (line_count_2 == 0) { // top of the csv list where the definitions of each column are
+
+            verb_conjugation_list_file_columns = string_split(line_2, '|');
+
+        } else { // normal data
+
+            std::vector<std::string> current_parsed_verb_conjugation_line = string_split(line_2, ',');
+
+            for (int i = 0; i < verb_conjugation_list_file_columns.size(); i++) {
+
+                if (i > verb_conjugation_list_file_columns.size() - 1) continue;
+                
+                lang_fr_verb_conjugations_stream << "What is the " << verb_conjugation_list_file_columns[i] << " form of the verb " << current_parsed_verb_conjugation_line[0] << "?|" << current_parsed_verb_conjugation_line[i] << "\n";
+            }
+        }
+
+        line_count_2++;
+    }
 
     // delete (or try to delete) the tmp files
     // dont check the return value, what happens happens
