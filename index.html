@@ -12,16 +12,38 @@
         <meta content = '#59c2ff' data-react-helmet = 'true' name = 'theme-color'/>
         <meta charset = 'utf-8'/>
 
-        <link rel = 'stylesheet/css' href = 'web_src/bootstrap.css'>
+        <link rel = 'stylesheet' href = 'web_src/bootstrap.css'>
         <script src = 'web_src/jquery-3.6.0.slim.js'></script>
         <script src = 'web_src/bootstrap.js'></script>
         <title>Peril - Trivia for Language Learners</title>
 
     </head>
 
-    <body>
+    <body class = 'mx-0 px-0'>
 
-        Test Content
+        <div id = 'peril-main-grid' class = 'container-fluid mx-0 px-0 bg-secondary'>
+
+            <!--the category bar-->
+            <div class = 'row mx-0 px-0 text-light peril-main-grid-row peril-main-grid-row-category-title'>
+                <div class = 'col-2 text-break border border-dark'>TMP_TITLE_1</div>
+                <div class = 'col-2 text-break border border-dark'>TMP_TITLE_2</div>
+                <div class = 'col-2 text-break border border-dark'>TMP_TITLE_3</div>
+                <div class = 'col-2 text-break border border-dark'>TMP_TITLE_4</div>
+                <div class = 'col-2 text-break border border-dark'>TMP_TITLE_5</div>
+                <div class = 'col-2 text-break border border-dark'>TMP_TITLE_6</div>
+            </div>
+
+            <!--the question bar (will be duplicated later on to fill the nessecary amount of columns)-->
+            <div class = 'row mx-0 text-warning px-0 peril-main-grid-row peril-main-grid-row-category-questions'>
+                <div class = 'col-2 text-break border border-dark'>TMP_ROW_QUESTION_1</div>
+                <div class = 'col-2 text-break border border-dark'>TMP_ROW_QUESTION_2</div>
+                <div class = 'col-2 text-break border border-dark'>TMP_ROW_QUESTION_3</div>
+                <div class = 'col-2 text-break border border-dark'>TMP_ROW_QUESTION_4</div>
+                <div class = 'col-2 text-break border border-dark'>TMP_ROW_QUESTION_5</div>
+                <div class = 'col-2 text-break border border-dark'>TMP_ROW_QUESTION_6</div>
+            </div>
+            </div>
+        </div>
     
     </body>
 </html>
