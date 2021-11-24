@@ -1,12 +1,33 @@
 {
     "quiz_data":{
-        "Noun Vocabulary":"data.vocab_nouns.lang.fr.txt",
-        "Adjective Vocabulary":"data.vocab_adjectives.lang.fr.txt",
-        "Phrases":"data.phrases.lang.fr.txt",
-        "Verb Conjugations":"data.verb_conjugations.lang.fr.txt",
-        "Verb Vocabulary":"data.verb_vocabulary.lang.fr.txt",
-        "Trivia":"data.simple_trivia.lang.fr.txt",
-        "Conversational Prompts":"data.conversation_prompts.lang.fr.txt"
+        "Noun Vocabulary":[
+            "data.vocab_nouns.lang.fr.txt",
+            100, 1000
+        ],
+        "Adjective Vocabulary":[
+            "data.vocab_adjectives.lang.fr.txt",
+            100, 1000
+        ],
+        "Phrases":[
+            "data.phrases.lang.fr.txt",
+            100, 1000
+        ],
+        "Verb Conjugations":[
+            "data.verb_conjugations.lang.fr.txt",
+            100, 1000
+        ],
+        "Verb Vocabulary":[
+            "data.verb_vocabulary.lang.fr.txt",
+            100, 1000
+        ],
+        "Trivia":[
+            "data.simple_trivia.lang.fr.txt",
+            100, 1000
+        ],
+        "Conversational Prompts":[
+            "data.conversation_prompts.lang.fr.txt",
+            100, 1000
+        ]
     },
     "quiz_version":"1.0",
     "quiz_name":"French",
