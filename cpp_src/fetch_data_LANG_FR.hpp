@@ -5,7 +5,7 @@
 const std::string LANG_FR_DATA_VOCAB_NOUNS = "data.vocab_nouns.lang.fr.txt"; // completed
 const std::string LANG_FR_DATA_VOCAB_ADJECTIVES = "data.vocab_adjectives.lang.fr.txt"; // completed
 const std::string LANG_FR_DATA_PHRASES = "data.phrases.lang.fr.txt";
-const std::string LANG_FR_DATA_VERB_CONJUGATIONS = "data.verb_conjugations.lang.fr.txt";
+const std::string LANG_FR_DATA_VERB_CONJUGATIONS = "data.verb_conjugations.lang.fr.txt"; // completed
 const std::string LANG_FR_DATA_VERB_VOCABULARY = "data.verb_vocabulary.lang.fr.txt"; // completed
 const std::string LANG_FR_DATA_SIMPLE_TRIVIA = "data.simple_trivia.lang.fr.txt";
 const std::string LANG_FR_DATA_CONVERSATION_PROMPTS = "data.conversation_prompts.lang.fr.txt";
