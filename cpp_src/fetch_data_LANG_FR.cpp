@@ -113,7 +113,7 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
 
     while (std::getline(verb_conjugation_list_file, line_2)) {
 
-        if (line_count_2 == 0) { // top of the csv list where the definitions of each column are
+        if (line_count_2 < 1) { // top of the csv list where the definitions of each column are
 
             verb_conjugation_list_file_columns = string_split(line_2, '|');
 
@@ -123,7 +123,7 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
 
             for (int i = 0; i < verb_conjugation_list_file_columns.size(); i++) {
 
-                if (i > verb_conjugation_list_file_columns.size() - 1) continue;
+                if (i > current_parsed_verb_conjugation_line.size() - 1) break;
                 
                 lang_fr_verb_conjugations_stream << "What is the " << verb_conjugation_list_file_columns[i] << " form of the verb " << current_parsed_verb_conjugation_line[0] << "?|" << current_parsed_verb_conjugation_line[i] << "\n";
             }
@@ -131,6 +131,8 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
 
         line_count_2++;
     }
+
+    lang_fr_adjectives_stream.close();
 
     // delete (or try to delete) the tmp files
     // dont check the return value, what happens happens
