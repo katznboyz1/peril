@@ -4,18 +4,21 @@ set(PERIL_VERSION 0.1)
 
 project(peril VERSION ${PERIL_VERSION})
 
-set(lib_peril
+set(src
     fetch_data_LANG_FR.cpp
     fetch_data_LANG_FR.hpp
+
+    stdfunctions.cpp
+    stdfunctions.hpp
 )
 
 add_executable(peril main.cpp)
 
-add_library(lib_peril_lib ${lib_peril})
+add_library(source ${src})
 
-set_target_properties(lib_peril_lib PROPERTIES LINKER_LANGUAGE CXX)
+set_target_properties(source PROPERTIES LINKER_LANGUAGE CXX)
 
-target_link_libraries(peril lib_peril_lib)
+target_link_libraries(peril source)
 
 target_link_libraries(peril -lcurl)
 
