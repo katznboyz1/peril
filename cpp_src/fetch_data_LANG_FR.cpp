@@ -50,34 +50,43 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
     } else return 2;
 
     // parse the file into different sections
-    std::string nouns;
-    std::string adjectives;
-    std::string verbs;
-    std::string adverbs;
-
     std::ifstream dictionary_file(output_path_char);
     std::string line;
+
+    ofstream lang_fr_nouns_stream;
+    ofstream lang_fr_adjectives_stream;
+    ofstream lang_fr_verbs_stream;
+
+    lang_fr_nouns_stream.open(category_data_path + LANG_FR_DATA_VOCAB_NOUNS);
+    lang_fr_adjectives_stream.open(category_data_path + LANG_FR_DATA_VOCAB_ADJECTIVES);
+    lang_fr_verbs_stream.open(category_data_path + LANG_FR_DATA_VERB_VOCABULARY);
 
     while (std::getline(dictionary_file, line)) {
 
         // will be in the format [word_fr, word_type_fr, TR-FR-EN, word_en, word_type_en]
         std::vector<std::string> split_line = string_split(line, ';');
         std::string word_type = split_line[1];
+        std::string word_FR = split_line[0];
+        std::string word_EN = split_line[3];
 
         if (word_type.compare("S")) { // noun
 
+            lang_fr_nouns_stream << line << "\n";
 
         } else if (word_type.compare("J")) { // adjective
 
+            lang_fr_adjectives_stream << line << "\n";
 
         } else if (word_type.compare("V")) { // verb
 
+            lang_fr_verbs_stream << line << "\n";
 
-        } else if (word_type.compare("D")) { // adverb
-
-
-        }
+        } // ignore adverbs for now
     }
+
+    lang_fr_nouns_stream.close();
+    lang_fr_adjectives_stream.close();
+    lang_fr_verbs_stream.close();
 
     return 0;
 }
