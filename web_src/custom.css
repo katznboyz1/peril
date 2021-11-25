@@ -6,3 +6,6 @@ body{width:100vw;height:100vh;background-color:#132a3c;overflow:hidden;font-size
 .peril-main-grid-row-category-cost div:hover{background-color:#332e0f;color:#e4dcaa;cursor:grab;}
 .peril-main-grid-row-category-cost div:active{background-color:#332e0f;color:#e4dcaa;cursor:grabbing;}
 #peril-main-grid-alert{position:absolute;bottom:0px;right:0px;z-index:99999;visibility:hidden;}
+#peril-answer-page{position:absolute;top:0px;left:0px;width:100vw;height:100vh;background-color:#0f212e;visibility:hidden;}
+#peril-answer-page-question{font-weight:bold;font-size:60px;}
+#peril-answer-page div{height:100vh;background-color:transparent !important;}

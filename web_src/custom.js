@@ -2,6 +2,8 @@ document.manifest_data = undefined;
 document.category_data = undefined;
 document.quiz_data = [];
 
+is_first_question = true;
+
 const CATEGORY_DATA_ROUTE = 'category_data/'
 
 window.onload = function(){
@@ -89,6 +91,16 @@ function register_answer_click(row, col) {
 
             if (i == row && j == col) current_parent_node.children[j].children[0].innerHTML = '';
         }
+    }
+
+    document.getElementById('peril-answer-page').style.visibility = 'visible';
+    document.getElementById('peril-answer-page-question').innerHTML = document.quiz_data[col][Math.floor(Math.random() * document.quiz_data[col].length)].split(/[|]/)[0];
+
+    if (is_first_question) {
+
+        alert('Click the question to relveal the answer!');
+
+        is_first_question = false;
     }
 }
 
