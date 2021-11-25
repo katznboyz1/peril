@@ -15,6 +15,7 @@
 - https://github.com/ianmackinnon/inflect
 - https://github.com/twbs/bootstrap
 - https://github.com/jquery/jquery
+- https://github.com/popperjs/popper-core
 
 ## Build From Scratch:
 
