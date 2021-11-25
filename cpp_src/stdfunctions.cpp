@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <random>
+#include <zlib.h>
 
 // from https://stackoverflow.com/a/1636415
 size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
@@ -42,6 +43,12 @@ int randint(int min, int max) {
     random_number = rd_gen_dist(rd_gen);
 
     return random_number;
+}
+
+// from https://stackoverflow.com/a/10440251
+int unzip_and_get_file(std::string file_to_unzip, std::string file_to_search_for) {
+
+    return 0;
 }
 
 // from https://stackoverflow.com/a/30338543

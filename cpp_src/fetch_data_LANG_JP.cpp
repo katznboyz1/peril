@@ -1,6 +1,7 @@
 #include <string>
 #include <curl/curl.h>
 #include <sqlite3.h>
+#include <zlib.h>
 
 #include "stdfunctions.hpp"
 
@@ -59,6 +60,16 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
         res = curl_easy_perform(curl_hiragana);
         curl_easy_cleanup(curl_hiragana);
         if (res != CURLE_OK) return 1;
+
+        // unzip the zip file we downloaded
+        
+
+        sqlite3* db_hiragana;
+        int res_hiragana = sqlite3_open("databaseName.db", &db_hiragana);
+        if (!res_hiragana) {
+
+        }
+        sqlite3_close(db_hiragana);
     }
 
     return 0;

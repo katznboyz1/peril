@@ -26,6 +26,8 @@
 - https://github.com/twbs/bootstrap
 - https://github.com/jquery/jquery
 - https://github.com/popperjs/popper-core
+- https://github.com/madler/zlib
+- https://ankiweb.net/shared/info/1552733819
 
 ## Build From Scratch:
 
