@@ -37,7 +37,7 @@ function load_trivia_page(index) {
         for (i = 0; i < document.getElementById('peril-main-board-category-bar').children.length; i++) {
 
             // TODO: escape all chars to prevent xss attacks
-            document.getElementById('peril-main-board-category-bar').children[i].children[0].innerHTML = data_2_quiz_data_keys[i];
+            document.getElementById('peril-main-board-category-bar').children[i].children[0].innerHTML = data_2_quiz_data_keys[i].replace('<', '&lt;').replace('>', '&gt;');
             document.getElementById('peril-main-board-category-bar').children[i].children[0].style.height = height_css;
         }
 
