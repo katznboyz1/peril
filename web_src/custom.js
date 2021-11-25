@@ -80,3 +80,5 @@ function register_answer_click(row, col) {
         }
     }
 }
+
+console.log('Want to contribute? Check out the GitHub repo! https://github.com/katznboyz1/peril');
