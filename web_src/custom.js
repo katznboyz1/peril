@@ -1,6 +1,7 @@
 document.manifest_data = undefined;
 document.category_data = undefined;
-document.quiz_data = [];
+document.quiz_data = [[], [], [], [], [], []];
+document.quiz_data_keys = [];
 
 const CATEGORY_DATA_ROUTE = 'category_data/'
 
@@ -35,6 +36,8 @@ function load_trivia_page(index) {
         let height_css = 'calc(100vh/' + String(num_of_rows + 1) + ')';
         let data_2_quiz_data_keys = Object.keys(data_2['quiz_data']);
 
+        document.quiz_data_keys = data_2_quiz_data_keys;
+
         for (i = 0; i < document.getElementById('peril-main-board-category-bar').children.length; i++) {
 
             // TODO: escape all chars to prevent xss attacks
@@ -66,20 +69,20 @@ function load_trivia_page(index) {
 
         // download the quiz data
         // might want to have a loading icon for this
-        for (i = 0; i < data_2_quiz_data_keys.length; i++) {
-
-            $.get(CATEGORY_DATA_ROUTE + document.category_data['quiz_data'][data_2_quiz_data_keys[i]], function(data_3) {
-
-                document.quiz_data.push(data_3.split(/\r?\n/));
-            });
-        }
+        // unfortunately since this is async and jquery doesnt let me pass values, I have to manually insert these values by hardcoding it
+        $.get(CATEGORY_DATA_ROUTE + document.category_data['quiz_data'][data_2_quiz_data_keys[0]], function(data_3) {document.quiz_data[0] = data_3.split(/\r?\n/)});
+        $.get(CATEGORY_DATA_ROUTE + document.category_data['quiz_data'][data_2_quiz_data_keys[1]], function(data_3) {document.quiz_data[1] = data_3.split(/\r?\n/)});
+        $.get(CATEGORY_DATA_ROUTE + document.category_data['quiz_data'][data_2_quiz_data_keys[2]], function(data_3) {document.quiz_data[2] = data_3.split(/\r?\n/)});
+        $.get(CATEGORY_DATA_ROUTE + document.category_data['quiz_data'][data_2_quiz_data_keys[3]], function(data_3) {document.quiz_data[3] = data_3.split(/\r?\n/)});
+        $.get(CATEGORY_DATA_ROUTE + document.category_data['quiz_data'][data_2_quiz_data_keys[4]], function(data_3) {document.quiz_data[4] = data_3.split(/\r?\n/)});
+        $.get(CATEGORY_DATA_ROUTE + document.category_data['quiz_data'][data_2_quiz_data_keys[5]], function(data_3) {document.quiz_data[5] = data_3.split(/\r?\n/)});
     });
 }
 
 function register_answer_click(row, col) {
 
     let num_of_rows = document.category_data['quiz_scores'].length;
-    let num_of_categories = 6;
+    let num_of_categories = document.quiz_data_keys.length;
 
     for (i = 0; i < num_of_rows; i++) {
 
