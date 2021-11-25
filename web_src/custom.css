@@ -2,4 +2,6 @@ body{width:100vw;height:100vh;overflow:hidden;font-size:30px;font-family:-apple-
 .peril-main-grid{height:100vh;}
 #peril-home-page{width:100vw;height:100vh;position:absolute;top:0px;left:0px;}
 .peril-main-grid-row-category-title div{font-size:20px;}
-.peril-main-grid-row-category-cost div{font-size:45px;font-weight:bold;}
+.peril-main-grid-row-category-cost div{font-size:45px;font-weight:bold;user-select:none;}
+.peril-main-grid-row-category-cost div:hover{background-color:#332e0f;color:#e4dcaa;cursor:grab;}
+.peril-main-grid-row-category-cost div:active{background-color:#332e0f;color:#e4dcaa;cursor:grabbing;}
