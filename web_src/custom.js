@@ -1,8 +1,10 @@
 document.manifest_data = undefined;
 
+const CATEGORY_DATA_ROUTE = '/category_data/'
+
 window.onload = function(){
 
-    $.getJSON('category_data/manifest.json', function(data_1) {
+    $.getJSON(CATEGORY_DATA_ROUTE + 'manifest.json', function(data_1) {
 
         document.manifest_data = data_1;
 
@@ -21,7 +23,7 @@ function load_trivia_page(index) {
 
     let category_row_original = document.getElementsByClassName('peril-main-grid-row-category-cost')[0];
 
-    $.getJSON('category_data/' + document.manifest_data['quizzes'][index][0], function(data_2) {
+    $.getJSON(CATEGORY_DATA_ROUTE + document.manifest_data['quizzes'][index][0], function(data_2) {
 
         // let this auto-scale by referencing the "api" in the future
         let num_of_rows = data_2['quiz_scores'].length;
