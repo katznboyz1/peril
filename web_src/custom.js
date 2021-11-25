@@ -14,9 +14,12 @@ window.onload = function(){
             let num_of_rows = data_2['quiz_scores'].length;
             let num_of_categories = 6;
             let height_css = 'calc(100vh/' + String(num_of_rows + 1) + ')';
+            let data_2_quiz_data_keys = Object.keys(data_2['quiz_data']);
 
             for (i = 0; i < document.getElementById('peril-main-board-category-bar').children.length; i++) {
 
+                // escape all chars to prevent xss attacks
+                document.getElementById('peril-main-board-category-bar').children[i].children[0].innerHTML = data_2_quiz_data_keys[i];
                 document.getElementById('peril-main-board-category-bar').children[i].children[0].style.height = height_css;
             }
 
@@ -34,7 +37,7 @@ window.onload = function(){
 
                 for (j = 0; j < num_of_categories; j++) {
 
-                    current_parent_node.children[j].children[0].innerHTML = "0000";
+                    current_parent_node.children[j].children[0].innerHTML = data_2['quiz_scores'][i];
                     current_parent_node.children[j].children[0].style.height = height_css;
                 }
             }
