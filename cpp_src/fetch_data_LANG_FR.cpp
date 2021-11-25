@@ -11,13 +11,6 @@
 
 using namespace std;
 
-/*
-    nouns: s
-    adjectives: j
-    verbs: v
-    adverbs: d
-*/
-
 int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::string &tmp_download_path, const int &curl_timeout_seconds) {
 
     CURL *curl_1;
@@ -100,10 +93,12 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
     ofstream lang_fr_nouns_stream;
     ofstream lang_fr_adjectives_stream;
     ofstream lang_fr_verbs_stream;
+    ofstream lang_fr_adverbs_stream;
 
     lang_fr_nouns_stream.open(category_data_path + LANG_FR_DATA_VOCAB_NOUNS);
     lang_fr_adjectives_stream.open(category_data_path + LANG_FR_DATA_VOCAB_ADJECTIVES);
     lang_fr_verbs_stream.open(category_data_path + LANG_FR_DATA_VERB_VOCABULARY);
+    lang_fr_adverbs_stream.open(category_data_path + LANG_FR_DATA_VOCAB_ADVERBS);
 
     while (std::getline(dictionary_file, line_1)) {
 
@@ -112,15 +107,23 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
         std::string word_type = split_line[1];
         std::string actual_line_output_contents = "What is the meaning of " + split_line[0] + " in English?" + "|" + split_line[3];
 
+        /*
+            nouns: s
+            adjectives: j
+            verbs: v
+            adverbs: d
+        */
         // unfortunately else if statements break this, I will investigate later.
         if (word_type.compare("S")) lang_fr_nouns_stream << actual_line_output_contents << "\n";
         if (word_type.compare("V")) lang_fr_verbs_stream << actual_line_output_contents << "\n";
         if (word_type.compare("J")) lang_fr_adjectives_stream << actual_line_output_contents << "\n";
+        if (word_type.compare("D")) lang_fr_adverbs_stream << actual_line_output_contents << "\n";
     }
 
     lang_fr_nouns_stream.close();
     lang_fr_adjectives_stream.close();
     lang_fr_verbs_stream.close();
+    lang_fr_adverbs_stream.close();
 
     std::ifstream verb_conjugation_list_file(output_path_char_2);
     std::string line_2;
