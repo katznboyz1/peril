@@ -5,7 +5,7 @@
         "Phrases":"data.phrases.lang.fr.txt",
         "Verb Conjugations":"data.verb_conjugations.lang.fr.txt",
         "Verb Vocabulary":"data.verb_vocabulary.lang.fr.txt",
-        "Trivia":"data.simple_trivia.lang.fr.txt"
+        "Adverbs":"data.vocab_adverbs.lang.fr.txt"
     },
     "quiz_version":"1.0",
     "quiz_authors":["katznboyz1"],

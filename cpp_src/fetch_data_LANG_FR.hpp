@@ -7,7 +7,7 @@ const std::string LANG_FR_DATA_VOCAB_ADJECTIVES = "data.vocab_adjectives.lang.fr
 const std::string LANG_FR_DATA_PHRASES = "data.phrases.lang.fr.txt"; // completed
 const std::string LANG_FR_DATA_VERB_CONJUGATIONS = "data.verb_conjugations.lang.fr.txt"; // completed
 const std::string LANG_FR_DATA_VERB_VOCABULARY = "data.verb_vocabulary.lang.fr.txt"; // completed
-const std::string LANG_FR_DATA_CONVERSATION_PROMPTS = "data.conversation_prompts.lang.fr.txt";
+const std::string LANG_FR_DATA_VOCAB_ADVERBS = "data.vocab_adverbs.lang.fr.txt";
 
 // should return 0 if it is successful
 int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::string &tmp_download_path, const int &curl_timeout_seconds);
