@@ -8,7 +8,6 @@
         "Trivia":"data.simple_trivia.lang.fr.txt"
     },
     "quiz_version":"1.0",
-    "quiz_name":"Basic French",
     "quiz_authors":["katznboyz1"],
     "quiz_scores":[200, 400, 600, 800, 1000, 1200, 1400],
     "quiz_chance_of_double_or_nothing":0.1

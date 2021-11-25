@@ -8,7 +8,16 @@ window.onload = function(){
 
         document.manifest_data = data_1;
 
-        $.getJSON('category_data/' + document.manifest_data['quizzes'][0], function(data_2) {
+        for (i = 0; i < document.manifest_data['quizzes'].length; i++) {
+
+            let new_dropdown_elem = document.createElement('a');
+            new_dropdown_elem.classList.add('dropdown-item');
+            new_dropdown_elem.href = '#';
+            new_dropdown_elem.innerHTML = document.manifest_data['quizzes'][i][1];
+            document.getElementById('peril-drop-down-menu-options').appendChild(new_dropdown_elem);
+        }
+
+        $.getJSON('category_data/' + document.manifest_data['quizzes'][0][0], function(data_2) {
 
             // let this auto-scale by referencing the "api" in the future
             let num_of_rows = data_2['quiz_scores'].length;
