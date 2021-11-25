@@ -2,6 +2,10 @@ window.onload = function(){
 
     let category_row_original = document.getElementsByClassName('peril-main-grid-row-category-cost')[0];
 
+    $.getJSON('/manifest.json', function(data) {
+        // JSON result in `data` variable
+    });
+
     // let this auto-scale by referencing the "api" in the future
     let num_of_rows = 5;
     let num_of_categories = 6; 
