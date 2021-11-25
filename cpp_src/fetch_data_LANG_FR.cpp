@@ -22,21 +22,26 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
 
     CURL *curl_1;
     CURL *curl_2;
+    CURL *curl_3;
     CURLcode res;
 
     std::string output_path_str_1 = tmp_download_path + "LANG_FR_1.txt";
     std::string output_path_str_2 = tmp_download_path + "LANG_FR_2.txt";
+    std::string output_path_str_3 = tmp_download_path + "LANG_FR_3.txt";
 
     char* output_path_char_1 = const_cast<char*>(output_path_str_1.c_str());
     char* output_path_char_2 = const_cast<char*>(output_path_str_2.c_str());
+    char* output_path_char_3 = const_cast<char*>(output_path_str_3.c_str());
     
     curl_1 = curl_easy_init();
     curl_2 = curl_easy_init();
+    curl_3 = curl_easy_init();
 
     if (curl_1 && curl_2) {
         
         FILE *file_1;
         FILE *file_2;
+        FILE *file_3;
 
         // fetch the entire dictionary and output it to a file
         file_1 = fopen(output_path_char_1, "wb");
@@ -69,6 +74,22 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
         fclose(file_2);
 
         if (res != CURLE_OK) return 3;
+
+        // fetch the entire dictionary and output it to a file
+        file_3 = fopen(output_path_char_3, "wb");
+
+        curl_easy_setopt(curl_3, CURLOPT_FAILONERROR, 1);
+        curl_easy_setopt(curl_3, CURLOPT_URL, "https://gist.githubusercontent.com/katznboyz1/3923eb5fdf1eb2f6306d1f0a8d7432fc/raw/3138986b3ad33dc82459b5a90a6ca75da6d221c8/5000_wordlist_french.csv");
+        curl_easy_setopt(curl_3, CURLOPT_WRITEFUNCTION, write_data);
+        curl_easy_setopt(curl_3, CURLOPT_WRITEDATA, file_3);
+        curl_easy_setopt(curl_3, CURLOPT_TIMEOUT, curl_timeout_seconds);
+
+        res = curl_easy_perform(curl_3);
+        curl_easy_cleanup(curl_3);
+
+        fclose(file_3);
+
+        if (res != CURLE_OK) return 4;
 
     } else return 1;
 
