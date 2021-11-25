@@ -160,11 +160,36 @@ int fetch_data_LANG_FR_all(const std::string &category_data_path, const std::str
 
     lang_fr_adjectives_stream.close();
 
+    std::ifstream phrases_file(output_path_char_3);
+    std::string line_3;
+
+    ofstream lang_fr_phrases_stream;
+
+    lang_fr_phrases_stream.open(category_data_path + LANG_FR_DATA_PHRASES);
+
+    int line_count_3 = 0;
+
+    while (std::getline(phrases_file, line_3)) {
+
+        if (line_count_3 != 0) {
+
+            // rank,word_fr,word_en,tag,phrase_fr,phrase_en
+            std::vector<std::string> row_parsed = readCSVRow(line_3);
+
+            lang_fr_phrases_stream << row_parsed[4] << "|" << row_parsed[5] << "\n";
+        }
+
+        line_count_3++;
+    }
+
+    lang_fr_phrases_stream.close();
+
     // delete (or try to delete) the tmp files
     // dont check the return value, what happens happens
     // its in /tmp/ so itll be deleted later anyhow
     remove(output_path_char_1);
     remove(output_path_char_2);
+    remove(output_path_char_3);
 
     return 0;
 }
