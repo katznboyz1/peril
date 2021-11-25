@@ -6,7 +6,7 @@
 
 - Make a script that automatically downloads the needed data for the categories.
 
-- Make the web UI (should be statically hosted so that people can run it without a server).
+- Fix the UI to look nicer.
 
 ## Credits:
 
