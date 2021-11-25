@@ -8,9 +8,9 @@
 
 ## TODO:
 
-- Make a script that automatically downloads the needed data for the categories.
+- Add a Japanese Language quiz sheet.
 
-- Fix the UI to look nicer.
+- Fix the UI to look neater.
 
 ## Credits:
 
