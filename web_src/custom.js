@@ -1,6 +1,6 @@
 document.manifest_data = undefined;
 
-const CATEGORY_DATA_ROUTE = '/category_data/'
+const CATEGORY_DATA_ROUTE = 'category_data/'
 
 window.onload = function(){
 
