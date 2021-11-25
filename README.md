@@ -6,6 +6,12 @@
 
 *The current UI progress. This will change in the future, and it is only a placeholder.*
 
+## Languages:
+
+- French
+
+- Japanese (work in progress)
+
 ## TODO:
 
 - Add a Japanese Language quiz sheet.
