@@ -2,6 +2,10 @@
 
 *A language learning trivia website that allows users to fully customize the questions that are asked. It also features a competitive mode where the users can compete for points in a game similar to Jeopardy.*
 
+![](https://i.imgur.com/aGa1mYC.png?raw=true)
+
+*The current UI progress. This will change in the future, and it is only a placeholder.*
+
 ## TODO:
 
 - Make a script that automatically downloads the needed data for the categories.
