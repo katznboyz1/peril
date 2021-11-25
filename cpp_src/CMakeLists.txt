@@ -21,7 +21,7 @@ add_library(source ${src})
 set_target_properties(source PROPERTIES LINKER_LANGUAGE CXX)
 
 target_link_libraries(peril source)
-
 target_link_libraries(peril -lcurl)
+target_link_libraries(peril -lsqlite3)
 
 set_target_properties(peril PROPERTIES COMPILE_OPTIONS "-O2;-std=c++17;")
