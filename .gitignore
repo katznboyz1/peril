@@ -3,5 +3,4 @@
 *.old
 build
 .vscode
-category_data/*.txt
 bootstrap-*.*.*-dist
