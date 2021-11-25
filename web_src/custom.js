@@ -2,8 +2,6 @@ document.manifest_data = undefined;
 document.category_data = undefined;
 document.quiz_data = [];
 
-is_first_question = true;
-
 const CATEGORY_DATA_ROUTE = 'category_data/'
 
 window.onload = function(){
@@ -93,15 +91,17 @@ function register_answer_click(row, col) {
         }
     }
 
+    question_index = Math.floor(Math.random() * document.quiz_data[col].length);
+
     document.getElementById('peril-answer-page').style.visibility = 'visible';
-    document.getElementById('peril-answer-page-question').innerHTML = document.quiz_data[col][Math.floor(Math.random() * document.quiz_data[col].length)].split(/[|]/)[0];
+    document.getElementById('peril-answer-page-question').innerHTML = document.quiz_data[col][question_index].split(/[|]/)[0];
+    document.getElementById('peril-answer-page-question').setAttribute('onclick', 'reveal_answer(' + String(row) + ',' + String(col) + ',' + String(question_index) + ')');
+    document.getElementById('peril-answer-page-answer').innerHTML = document.quiz_data[col][question_index].split(/[|]/)[1];
+}
 
-    if (is_first_question) {
+function reveal_answer(row, col, question_index) {
 
-        alert('Click the question to relveal the answer!');
-
-        is_first_question = false;
-    }
+    document.getElementById('peril-answer-page-answer').style.visibility = 'visible';
 }
 
 console.log('Want to contribute? Check out the GitHub repo! https://github.com/katznboyz1/peril');
