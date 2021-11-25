@@ -12,7 +12,7 @@ window.onload = function(){
 
             let new_dropdown_elem = document.createElement('a');
             new_dropdown_elem.classList.add('dropdown-item');
-            new_dropdown_elem.href = '#';
+            new_dropdown_elem.setAttribute('onclick', 'load_trivia_page(' + String(i) + ')');
             new_dropdown_elem.innerHTML = document.manifest_data['quizzes'][i][1];
             document.getElementById('peril-drop-down-menu-options').appendChild(new_dropdown_elem);
         }
@@ -52,4 +52,7 @@ window.onload = function(){
             }
         });
     });
+}
+
+function load_trivia_page(index) {
 }
