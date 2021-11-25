@@ -7,6 +7,8 @@ project(peril VERSION ${PERIL_VERSION})
 set(src
     fetch_data_LANG_FR.cpp
     fetch_data_LANG_FR.hpp
+    fetch_data_LANG_JP.cpp
+    fetch_data_LANG_JP.hpp
 
     stdfunctions.cpp
     stdfunctions.hpp
