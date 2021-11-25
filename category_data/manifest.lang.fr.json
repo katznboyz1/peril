@@ -9,6 +9,6 @@
     },
     "quiz_version":"1.0",
     "quiz_authors":["katznboyz1"],
-    "quiz_scores":[200, 400, 600, 800, 1000, 1200, 1400],
+    "quiz_scores":[100, 200, 300, 400, 500],
     "quiz_chance_of_double_or_nothing":0.1
 }
