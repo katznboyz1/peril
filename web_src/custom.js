@@ -1,5 +1,6 @@
 document.manifest_data = undefined;
 document.category_data = undefined;
+document.quiz_data = [];
 
 const CATEGORY_DATA_ROUTE = 'category_data/'
 
@@ -62,6 +63,16 @@ function load_trivia_page(index) {
         }
 
         document.getElementById('peril-home-page').style.visibility = 'hidden';
+
+        // download the quiz data
+        // might want to have a loading icon for this
+        for (i = 0; i < data_2_quiz_data_keys.length; i++) {
+
+            $.get(CATEGORY_DATA_ROUTE + document.category_data['quiz_data'][data_2_quiz_data_keys[i]], function(data_3) {
+
+                document.quiz_data.push(data_3.split(/\r?\n/));
+            });
+        }
     });
 }
 
