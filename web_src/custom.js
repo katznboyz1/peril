@@ -1,4 +1,5 @@
 document.manifest_data = undefined;
+document.category_data = undefined;
 
 const CATEGORY_DATA_ROUTE = 'category_data/'
 
@@ -24,6 +25,8 @@ function load_trivia_page(index) {
     let category_row_original = document.getElementsByClassName('peril-main-grid-row-category-cost')[0];
 
     $.getJSON(CATEGORY_DATA_ROUTE + document.manifest_data['quizzes'][index][0], function(data_2) {
+
+        document.category_data = data_2;
 
         // let this auto-scale by referencing the "api" in the future
         let num_of_rows = data_2['quiz_scores'].length;
@@ -54,9 +57,26 @@ function load_trivia_page(index) {
 
                 current_parent_node.children[j].children[0].innerHTML = data_2['quiz_scores'][i];
                 current_parent_node.children[j].children[0].style.height = height_css;
+                current_parent_node.children[j].setAttribute('onclick', 'register_answer_click(' + String(i) + ',' + String(j) + ')');
             }
         }
 
         document.getElementById('peril-home-page').style.visibility = 'hidden';
     });
+}
+
+function register_answer_click(row, col) {
+
+    let num_of_rows = document.category_data['quiz_scores'].length;
+    let num_of_categories = 6;
+
+    for (i = 0; i < num_of_rows; i++) {
+
+        let current_parent_node = document.getElementsByClassName('peril-main-grid-row-category-cost')[i];
+
+        for (j = 0; j < num_of_categories; j++) {
+
+            if (i == row && j == col) current_parent_node.children[j].children[0].innerHTML = '';
+        }
+    }
 }
