@@ -10,3 +10,4 @@ body{width:100vw;height:100vh;background-color:#132a3c;overflow:hidden;font-size
 #peril-answer-page-question{font-weight:bold;font-size:60px;}
 #peril-answer-page div{height:100vh;background-color:transparent !important;}
 #peril-answer-page-answer{font-weight:bold;font-size:60px;visibility:hidden;}
+.peril-answer-page-small-text{font-weight:bold;}

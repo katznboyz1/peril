@@ -94,14 +94,24 @@ function register_answer_click(row, col) {
     question_index = Math.floor(Math.random() * document.quiz_data[col].length);
 
     document.getElementById('peril-answer-page').style.visibility = 'visible';
+    document.getElementById('peril-answer-page-reveal-answer').style.visibility = 'visible';
+    document.getElementById('peril-answer-page-return-to-board').style.visibility = 'hidden';
     document.getElementById('peril-answer-page-question').innerHTML = document.quiz_data[col][question_index].split(/[|]/)[0];
-    document.getElementById('peril-answer-page-question').setAttribute('onclick', 'reveal_answer()');
-    document.getElementById('peril-answer-page-answer').innerHTML = document.quiz_data[col][question_index].split(/[|]/)[1];
+    document.getElementById('peril-answer-page-answer').innerHTML = 'What is: "' + document.quiz_data[col][question_index].split(/[|]/)[1] + '".';
 }
 
 function reveal_answer() {
 
     document.getElementById('peril-answer-page-answer').style.visibility = 'visible';
+    document.getElementById('peril-answer-page-reveal-answer').style.visibility = 'hidden';
+    document.getElementById('peril-answer-page-return-to-board').style.visibility = 'visible';
+}
+
+function return_to_board() {
+
+    document.getElementById('peril-answer-page-answer').style.visibility = 'hidden';
+    document.getElementById('peril-answer-page-return-to-board').style.visibility = 'hidden';
+    document.getElementById('peril-answer-page').style.visibility = 'hidden';
 }
 
 console.log('Want to contribute? Check out the GitHub repo! https://github.com/katznboyz1/peril');
