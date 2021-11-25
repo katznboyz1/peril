@@ -95,11 +95,11 @@ function register_answer_click(row, col) {
 
     document.getElementById('peril-answer-page').style.visibility = 'visible';
     document.getElementById('peril-answer-page-question').innerHTML = document.quiz_data[col][question_index].split(/[|]/)[0];
-    document.getElementById('peril-answer-page-question').setAttribute('onclick', 'reveal_answer(' + String(row) + ',' + String(col) + ',' + String(question_index) + ')');
+    document.getElementById('peril-answer-page-question').setAttribute('onclick', 'reveal_answer()');
     document.getElementById('peril-answer-page-answer').innerHTML = document.quiz_data[col][question_index].split(/[|]/)[1];
 }
 
-function reveal_answer(row, col, question_index) {
+function reveal_answer() {
 
     document.getElementById('peril-answer-page-answer').style.visibility = 'visible';
 }
