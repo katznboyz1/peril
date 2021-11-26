@@ -2,8 +2,10 @@
 #include <vector>
 #include <string>
 #include <random>
-#include <zip.h>
 #include <fstream>
+#include <iostream>
+
+using namespace std;
 
 // from https://stackoverflow.com/a/1636415
 size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
@@ -44,40 +46,6 @@ int randint(int min, int max) {
     random_number = rd_gen_dist(rd_gen);
 
     return random_number;
-}
-
-// from https://stackoverflow.com/a/10440251
-int unzip_and_get_file(const char *file_to_unzip, const char *file_to_search_for, const char *output_path) {
-
-    //Open the ZIP archive
-    int err = 0;
-    zip *z = zip_open(file_to_unzip, 0, &err);
-
-    //Search for the file of given name
-    const char *name = file_to_search_for;
-    struct zip_stat st;
-    zip_stat_init(&st);
-    zip_stat(z, name, 0, &st);
-
-    //Alloc memory for its uncompressed contents
-    char *contents = new char[st.size];
-
-    //Read the compressed file
-    zip_file *f = zip_fopen(z, "file.txt", 0);
-    zip_fread(f, contents, st.size);
-    zip_fclose(f);
-
-    //And close the archive
-    zip_close(z);
-
-    FILE *output_file;
-    output_file = fopen(output_path, "wb");
-
-    fprintf(output_file, "%s", contents);
-
-    fclose(output_file);
-
-    return 0;
 }
 
 // from https://stackoverflow.com/a/30338543

@@ -1,6 +1,7 @@
 #include <string>
 #include <curl/curl.h>
 #include <sqlite3.h>
+#include <iostream>
 
 #include "stdfunctions.hpp"
 
@@ -77,14 +78,17 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
         if (res != CURLE_OK) return 1;
 
         // unzip the zip file we downloaded
-        unzip_and_get_file(output_path_hiragana_char, "collection.anki2", output_path_hiragana_char_db);
+        //unzip -p myarchive.zip path/to/zipped/file.txt >file.txt
+        int status_hiragana = system(("unzip -p " + output_path_hiragana + " collection.anki2 > " + output_path_hiragana_db + " &").c_str());
+        if (status_hiragana != 0) return 2;
 
         sqlite3* db_hiragana;
         int res_hiragana = sqlite3_open(output_path_hiragana_char_db, &db_hiragana);
         if (!res_hiragana) {
 
             // fetch the needed data
-        }
+
+        } else return 3;
         sqlite3_close(db_hiragana);
     }
 

@@ -11,5 +11,3 @@ std::vector<std::string> string_split(std::string str, char delimiter);
 int randint(int max, int min);
 
 std::vector<std::string> readCSVRow(const std::string &row);
-
-int unzip_and_get_file(const char *file_to_unzip, const char *file_to_search_for, const char *output_path);
