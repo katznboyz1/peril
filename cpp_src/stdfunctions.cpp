@@ -3,6 +3,7 @@
 #include <string>
 #include <random>
 #include <zip.h>
+#include <fstream>
 
 // from https://stackoverflow.com/a/1636415
 size_t write_data(void *ptr, size_t size, size_t nmemb, FILE *stream) {
@@ -46,7 +47,7 @@ int randint(int min, int max) {
 }
 
 // from https://stackoverflow.com/a/10440251
-char* unzip_and_get_file(const char *file_to_unzip, const char *file_to_search_for) {
+int unzip_and_get_file(const char *file_to_unzip, const char *file_to_search_for, const char *output_path) {
 
     //Open the ZIP archive
     int err = 0;
@@ -69,7 +70,14 @@ char* unzip_and_get_file(const char *file_to_unzip, const char *file_to_search_f
     //And close the archive
     zip_close(z);
 
-    return contents;
+    FILE *output_file;
+    output_file = fopen(output_path, "wb");
+
+    fprintf(output_file, "%s", contents);
+
+    fclose(output_file);
+
+    return 0;
 }
 
 // from https://stackoverflow.com/a/30338543
