@@ -80,7 +80,7 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
                     // the files quite literally have a char length of 5666666666666666666666666667766676666666665555566666666666666666666666660 for this index
                     // so I will need to manually find japanese chars    
                     boost::wsmatch match;
-                    if (boost::regex_search(question_string.cbegin(), question_string.cend(), match, japanese_char_regex) == 0) {
+                    if (boost::regex_search(question_string, match, japanese_char_regex)) {
 
                         japanese_char = match.str();
                     }
