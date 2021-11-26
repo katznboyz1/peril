@@ -22,6 +22,7 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
     if (curl_init_was_success) {
 
         FILE *files[6];
+
         std::string urls[6] = {
             "https://gist.githubusercontent.com/katznboyz1/9c679680ca7e661a5bc6ae8fc2062bc9/raw/e1beecbdeba1006dd9c62543a687adc544727ab3/anki-1552733819.csv",
             "about:blank",
@@ -41,7 +42,19 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
 
         for (int i = 0; i < 6; i++) {
 
-            files[i] = fopen(output_files[i].c_str(), "wb");
+            files[i] = fopen((tmp_download_path + output_files[i]).c_str(), "wb");
+
+            CURLcode res;
+
+            curl_easy_setopt(curl[i], CURLOPT_FAILONERROR, 1);
+            curl_easy_setopt(curl[i], CURLOPT_URL, urls[i].c_str());
+            curl_easy_setopt(curl[i], CURLOPT_WRITEFUNCTION, write_data);
+            curl_easy_setopt(curl[i], CURLOPT_WRITEDATA, files[i]);
+            curl_easy_setopt(curl[i], CURLOPT_TIMEOUT, curl_timeout_seconds);
+
+            res = curl_easy_perform(curl[i]);
+            curl_easy_cleanup(curl[i]);
+
             fclose(files[i]);
         }
     }
