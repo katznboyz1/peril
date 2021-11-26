@@ -1,0 +1,231 @@
+あなた は &nbsp;先[せん] 生[せい] ですか？|Are you a teacher?
+彼[かれ] は &nbsp;エンジニア[えんじにあ] です。|He is an engineer.
+あなた は &nbsp;田[た] 中[なか]さん ですか。|Are you Tanaka?
+私[わたし] は &nbsp;英[えい] 語[ご] の &nbsp;先[せん] 生[せい] です。|I am an English teacher.
+私[わたし] は &nbsp;カ[か]ナ[な]ダ[だ] 人[じん] です。|I am Canadian
+私[わたし] は 木[き]村[むら] です。|I am Kimura.
+私[わたし] は 日[に]本[ほん]語[ご] の 先[せん]生[せい] じゃありません。|I am not a Japanese teacher.
+私 は &nbsp;田[た]中[なか] じゃありません。|I am not Tanaka.
+田[た]中[なか]さん は 日[に]本[ほん]語[ご] の 先[せん]生[せい] &nbsp;ですか。|Is Tanaka a Japanese Teacher?
+彼女[かのじょ] は &nbsp;学[がく]生[せい] &nbsp;です。|she is a student.
+田[た]中[なか]さん も &nbsp;カ[か]ナ[な]ダ[だ]人[じん] です。|Tanaka is also Canadian
+あの &nbsp;人[ひと] は だれ ですか？|who is that person?
+これ は &nbsp;傘[かさ] です。|this is an umbrella.
+あれ は &nbsp;時[と]計[けい] です。|That, over there, is a clock.
+それ は &nbsp;何[なん] ですか。|What is that?
+その &nbsp;本[ほん] は あなた の です。|That book is yours.
+それ は &nbsp;私[わたし] の &nbsp;帽子[ぼうし] です。|That is my hat.
+それ は &nbsp;パ[ぱ]ト[と]リ[り]ッ[っ]ク[く]さん の です。|That's Patrick's.
+この 車[くるま] は 木村[きむら]さん の です。|This car is Kimura's.
+これ　は　ケ[け]イ[い]ト[と]リ[り]ン[ん]さん　の　ペン　です。|This is Kaitlin's pen.
+これ は 私[わたし] の です。|This is mine.
+この &nbsp;鍵[かぎ] は だれ の ですか。|Whose key is this?
+あれ　は　だれ　の 　カメラ[かめら]　ですか。|Whose camera is that over there?
+それ は &nbsp;誰[だれ] の ですか。|Whose is that?
+あなた　の 　鞄[かばん]　は　どれ　ですか？|Which bag is yours?
+これ　は　あなた　の　 財布[さいふ]　ですか？|Is this wallet yours?
+今日[きょう]　は　 何曜日[なんようび]　ですか？|What day of the week is today?
+明日[あした]　は 　火曜日[かようび]　です。|Tomorrow is Tuesday.
+明日[あした]　は　 何月[なんがつ]　 何日[なんにち]　ですか？|What is tomorrow's date?
+今日[きょう]　は 　四月[しがつ]　 三日[みっか]　です。|Today is April 3rd
+今[いま]　 何時[なんじ]　ですか？|What time is it, now?
+今[いま]　 八時[はちじ]　です。|It is 8 o'clock, now.
+あなた　の 　誕生日[たんじょうび]　は 　何月[なんがつ]　 何日[なんにち]　ですか？|What date is your birthday?
+何時[なんじ]　まで　です　か？|When do you close?
+何時[なんじ]　から　ですか？|When do you open?
+私[わたし]　は　 三時半[さんじはん]　まで &nbsp; 働[はたら]きます。|I work until 3:30
+この　 レストラン[れすとらん]　は　 九時[くじ]　から　 三時[さんじ]　まで　です。|This restaurant is open from 9 to 3.
+仕事[しごと]　は 　何時[なんじ]　に 　始[はじ]まりますか？|What time does your job start?
+仕事[しごと]　は 　何時[なんじ]　に 　終[お]わりますか？|What time does your job finish?
+私[わたし]　は &nbsp; 七[しち]時[じ]十[じゅう]五[ご]分[ふん] に &nbsp;起[お]きます。|I wake up at 7:15.
+私[わたし]　は　 十時[じゅじ]　に　 寝[ね]ません。|I don't go to bed at 10.
+私[わたし]　は　 銀行[ぎんこう]　へ　 行[い]きます。|I will go to the bank.
+あなた　は　どこ　へ　 行[い]きますか？|Where will you go?
+木村[きむら]さん　は 病院[びょういん]　へ　 行[い]きます。|Kimura-san will go to the hospital.
+私[わたし] は &nbsp;電車[でんしゃ] で &nbsp; セ[せ]ン[ん]ター[たあ]へ &nbsp;来[き]ます。|I come to the Center by train.
+私[わたし]たち は &nbsp;自転車[じてんしゃ] で &nbsp;川崎駅[かわさきえき] へ &nbsp;来[き]ます。|We come to kawasaki by bicycle.
+あなた は &nbsp;何[なん]で ここ へ &nbsp;来[き]ますか？|How do you come here?
+私[わたし] は &nbsp;来年[らいねん] &nbsp;国[くに] へ &nbsp;帰[かえ]ります。|I will return to my country next year.
+私[わたし] は &nbsp;妻[つま] と &nbsp;家[うち] へ &nbsp;帰[かえ]ります。|I will return home with my wife.
+あなた は いつ &nbsp;家[うち] へ &nbsp;帰[かえ]りますか？|When will you return home?
+私[わたし] は &nbsp;川崎駅[かわさき] へ &nbsp;電車[でんしゃ] で &nbsp;行[い]きます。|I will go to kawasaki station by train.
+私[わたし] は &nbsp;家[うち] へ &nbsp;飛行機[ひこうき] で &nbsp;来[き]ません。|I won't come home by airplane.
+私[わたし] は &nbsp;鶴見駅[つるみえき] から &nbsp;潮田中学[うしおだちゅうがく] まで &nbsp;歩[ある]きました。|I walked from tsurumi station to Ushioda JHS.
+私[わたし] は &nbsp;一昨年[おととし] 日本[にほん] へ &nbsp;来[き]ました。|I came to japan the year before last.
+あなた は &nbsp;昨日[きのう] どこ へ &nbsp;行[い]きましたか？|Where did you go yesterday?
+私[わたし] は どこ も &nbsp;行[い]きませんでした。|I didn't go anywhere.
+私[わたし] は &nbsp;本[ほん] を &nbsp;読[よ]みます。|I read books.
+私[わたし] は &nbsp;ゲー[げえ]ム[む] を しました。|I played a game.
+私[わたし] は &nbsp;コー[こお]ヒー[ひい] を 飲[の]みません。|I don't drink coffee.
+あなた は &nbsp;日本語[にほんご] を &nbsp;勉強[べんきょう]しますか？|Do you study Japanese?
+私[わたし] は &nbsp;居酒屋[いざかや] で &nbsp;焼き鳥[やきとり] を &nbsp;食[た]べます。|I eat yakitori in an izakaya.
+ケ[け]イ[い]ト[と]リ[り]ン[ん]さん は &nbsp;コ[こ]ン[ん]ビ[び]ニ[に] で おにぎり を 買[か]います。|Kaitlin buys onigiri at the convenience store.
+あなた は どこ で &nbsp; ビー[びい]ル[る] を &nbsp;飲[の]みますか？|Where do you drink beer?
+日本人[にほんじん] は &nbsp;橋[はし] で &nbsp;ご 飯[はん] を &nbsp;食[た]べます。|Japanese people use chopsticks to eat rice.
+私[わたし] は はさみ で &nbsp;髪[かみ] を &nbsp;切[き]ります|I use scissors to cut paper.
+あなた は &nbsp;何語[なにご] で &nbsp;手紙[てがみ] を &nbsp;書[か]きますか？|What language to you use to write letters?
+家[うち] で &nbsp;日本語[にほんご] の &nbsp;映画[えいが] を &nbsp;見[み]ました。|At home, I watched a Japanese movie.
+毎朝[まいあさ] &nbsp;ケ[け]イ[い]ト[と]リ[り]ン[ん] &nbsp;は &nbsp;コー[こお]ヒー[ひい] を &nbsp;買[か]います。|Every morning, Kaitlin buys coffee.
+学生[がくせい] が います。|There is a student.
+公園[こうえん] に &nbsp;犬[いぬ] が います。|At the park, there is a dog.
+ここ に だれも が いません。|Here, there is no one.
+そこ に &nbsp;韓国[かんこく]の &nbsp;レ[れ]ス[す]ト[と]ラ[ら]ン[ん] が あります。|There, there is a Korean Restaurant.
+机[つくえ]の 上[うえ] に &nbsp;パ[ぱ]ス[す]コ[こ]ン[ん] が あります。|On the desk, there is a computer.
+木[き] の 下[した] に 猫[ねこ] が います。|Under the tree, there is a cat.
+冷蔵庫[れいぞうこ] の &nbsp;中[なか] に &nbsp;ビー[びい]ル[る] が あります。|In the fridge, there is a beer.
+家[いえ] の &nbsp;前[まえ] に &nbsp;車[くるま] が あります。|In front of the house, there is a car.
+本屋[ほんや] の &nbsp;後[うし]ろ に &nbsp;花屋[はなや] が あります。|behind the bookstore, there is a flower shop.
+猫[ねこ] と &nbsp;犬[いぬ] の &nbsp;間[あいだ] に &nbsp;鼠[ねずみ] が います。|between the cat and dog, there is a mouse.
+川崎大師[かわさきだいし] の &nbsp;近[ちか]く に &nbsp;私[わたし] の &nbsp;家[いえ] が あります。|Close to Kawasaki Daishi, is my house.
+私[わたし] の &nbsp;隣[となり] に &nbsp;パ[ぱ]ト[と]リ[り]ッ[っ]ク[く] が います。|Next to me, is Patrick.
+Starbucksの &nbsp;右[みぎ] に 7-11 が あります。|On the right fo Starbucks, there is a 7-11.
+7-11 の &nbsp;左[ひだり] に Starbucks が あります。|On the left of 7-11, there is a Starbucks.
+富士山[ふじさん] は &nbsp;高[たか]い です。|Mt. Fuji is tall.
+日本語[にほんご] は &nbsp;難[むすか]しいです。|Japanese is hard.
+この クラス は &nbsp;楽[たの]しくないです。|This class is not fun.
+今日[きょう] は &nbsp;暑[あつ]くないです。|Today is not hot.
+桜[さくら] は &nbsp;綺麗[きれい]な です。|Cherry blossoms are pretty.
+横浜駅[よこはまえき] は &nbsp;賑[にぎ]やかです。|Yokohama Station is lively.
+私[わたし] は &nbsp;朝[あさ] &nbsp;元気[げんき]じゃありません。|In the morning, I'm not energetic.
+川崎[かわさき] は &nbsp;便利[べんり]じゃありません。|Kawasaki is not convenient.
+これ は &nbsp;思[おも]い &nbsp;鞄[かばん] です。|This is a heavy bag.
+キ[き]ウィ[うぃ] は &nbsp;可愛[かわい]い &nbsp;猫[ねこ]です。|Kiwi is a cute cat.
+京都[きょうと] は &nbsp;静[しず]かな &nbsp;町[まち] です。|Kyoto is a peaceful town.
+寿司[すし] は &nbsp;有名[ゆうめい]な &nbsp;日本[にほん] の　 食[た]べ物[もの] です。|Sushi is a famous Japanese food.
+漢字[かんじ] は &nbsp;優[やさ]しい ですか？|Is kanji easy?
+あなた の &nbsp;奥[おく]さん は &nbsp;異例[きれい] ですか？|is your wife pretty?
+映画[えいが] は &nbsp;面白[おもしろ]かった です。|The movie was interesting.
+祭[まつ]り は &nbsp;賑[にぎ]やか でした。|The festival was busy/lively.
+水[みず] は &nbsp;寒[さむ]くなかった です。|The water was not cold.
+パーティ は &nbsp;楽[たの]しくなかった です。|The party was not fun.
+私[わたし] は &nbsp;今朝[けさ] &nbsp;元気[げんき] じゃありません でした。|This morning, I was not energetic.
+鈴木[すずき] は &nbsp;水木[みずき] に &nbsp;花[はな] を &nbsp;上[あ]げます。|Suzuki will give a flower to Mizuki.
+私[わたし] は &nbsp;美玖[みか]ちゃん　 に &nbsp;チョ[ちょ]コ[こ]レー[れえ]ト[と] &nbsp;を &nbsp;上[あ]げました。|I gave chocolate to Mika-chan.
+美玖[みく]ちゃん は &nbsp;私[わたし] に（から） チョ[ちょ]コ[こ]レー[れえ]ト[と] を &nbsp;貰[もら]いました。|Mika-chan received chocolate from me.
+母[はは] は &nbsp;私[わたし] に &nbsp;お 金[かね] を &nbsp;くれました。|Mom gave ME money.
+伊勢[いせ] は 美玖[みく] に（から）鉛筆[えんぴつ] を 借[か]ります。|Ise borrows a pencil from Miku.
+伊[い]勢[せ] は &nbsp;美[み]玖[く] に &nbsp;消[け]し ゴ[ご]ム[む] を &nbsp;貸[か]します。|Ise lends an eraser to Miku.
+私[わたし] は &nbsp;車[くるま] が &nbsp;欲[ほ]しいです。|I want a car.
+私[わたし] は &nbsp;新[あたら]しい &nbsp;カ[か]メ[め]ラ[ら] が &nbsp;欲[ほ]しいです。|I want a new camera.
+あなた は &nbsp;何[なに] が &nbsp;欲[ほ]しい ですか？|What do you want?
+私[わたし] は &nbsp;本[ほん] を &nbsp;読[よ]みたい です。|I want to read a book.
+私[わたし] は &nbsp;納豆[なっと] が &nbsp;食[た]べたくない です。|I don't want to  eat natto.
+私[わたし] は &nbsp;何[なに]も したくな いです。|I don't want to do anything.
+私[わたし] は &nbsp;明日[あした] &nbsp;試験[しけん] が あります。|Tomorrow, I have a test.
+私[わたし] は &nbsp;用事[しけん] が ありません。|I don't have any engagements.
+あなた は &nbsp;時間[じかん] が ありますか？|Do you have time?
+犬[いぬ] が &nbsp;七匹[ななひき] います。|There are 7 dogs.
+事務室[じむしつ] に &nbsp;学生[がくせい] が &nbsp;二人[ふたり] います。|In the classroom, there are 2 students.
+私[わたし] は &nbsp;焼[や]き 鳥[とり] が &nbsp;四本[よんほん] &nbsp;買[か]います。|I will buy 4 yakitori sticks.
+私[わたし] は &nbsp;ビー[びい]ル[る] が &nbsp;三倍[さんばい] &nbsp;飲[の]みます。|I will drink 3 cups of beer.
+私[わたし<b>]</b>　は　 ア[あ]ニ[に]メ[め]　を　 五時間[ごじかん]　 見[み]ました。|I watched anime for 5 hours.
+私[わたし]　は　 日本語[にほんご]　を　 一週間[いっしゅうかん]　に　 一回[いっかい]　 勉強[べんきょう]します。|I study Japanese once a week.
+永井[ながい]　は　 一年[いちねん]　に　 一[いっ]回[かい]　 沖縄[おきなわ]　へ　 行[い]きました。|Nagai goes to Okinawa twice a year.
+私[わたし]　は　 寿司[すし]　が　 好[す]き　です。|I like sushi.
+私[わたし]　は　 野菜[やさい]　が　 嫌[きら]い　です。|I don't like vegetables.
+諭介[ゆすけ]　は　 歌[うた]　が　 上手[じょうず]　です。|Yusuke is good at singing.
+陽向[ひなた]　は　 料理[りょうり]　が &nbsp;下手[へた]です。|Hinata is not good at cooking.
+恵美[えみ] は &nbsp;制[せい] が &nbsp;高[た]いです。|Emi is tall.
+港[みなと] は &nbsp;目[め] が &nbsp;大[おお]きい です。|Minato has big eyes.
+私[わたし] は &nbsp;英語[えいご] が &nbsp;分[わか]かります。|I understand English
+私[わたし] はひらがな が よく 分[わ]かります。|I mostly understand hiragana.
+私[わたし] は &nbsp;カ[か]タ[た]カ[か]ナ[な] が &nbsp;大体[だいたい] &nbsp;分[わ]かります。|I understand a lot of katakana.
+私[わたし] は &nbsp;日本語[にほんご] が &nbsp;少[すこ]し &nbsp;分[わ]かります。|I kind of understand Japanese.
+私[わたし] は &nbsp;漢字[かんじ] が あまり &nbsp;分[わ]かりません。|I don't understand much kanji.
+私[わたし] は &nbsp;中国語[ちゅうごくご] が &nbsp;全然[ぜんぜん] &nbsp;分[わ]かりません。|I don't understand any Chinese.
+一緒[いしょ]に &nbsp;餃子[ぎょうざ] を &nbsp;作[つく]りませんか？|Would you like to make gyoza together?
+ええ、 餃子[ぎょうざ] を &nbsp;作[つく]りましょう！|Yes, let's make gyoza!
+一緒[いっしょ]に この &nbsp;歌[うた] を &nbsp;歌[うた]いませんか？|Would you like to sing this song together?
+この &nbsp;歌[うた] ですか？この &nbsp;歌[うた]は　ちょっと。。。|this song? Mmmmm…..
+北海道[ほっかいどう] は &nbsp;寒[さむ]い です から、コート が &nbsp;要[い]ります。|Hokkaido is cold, so you need a coat.
+お金[かね] が ありません から、 &nbsp;ハ[は]ワ[わ]イ[い] へ 行[い]きません。|I have no money, so I won't go to Hawaii.
+どうして &nbsp;先週[せんしゅう] &nbsp;休[やす]み ましたか？|Why were you absent last week?
+熱[ねつ] が ありました から。|Because I had a fever.
+豚肉[ぶたにく] は &nbsp;牛肉[ぎゅにく] より &nbsp;安[やす]いです。|pork is cheaper than beef.
+土曜日[どようび] は &nbsp;水曜日[すいようび] より &nbsp;暇[ひま]です。|I have more free time on Saturday than Wednesday.
+赤[あか]ワイン と &nbsp;白[しろ]ワイン と どっち が &nbsp;好[す]き ですか？|Which do you like: wine or red wine?
+どっちも &nbsp;好[す]きです。|I like both.
+どっちも &nbsp;好[す]き じゃありません。|I don't like either.
+川崎[かわさき] と &nbsp;東京[とうきょう] と どちら が &nbsp;人[ひと]が 少[すく]ない ですか？|Which has fewer people: Kawasaki or Tokyo?
+川崎[かわさき] のほうが &nbsp;人[ひと]が 少[すく]ない です。|Kawasaki has fewer people.
+これ のほうが &nbsp;良[い]いです。|This is better.
+猫[ねこ] が &nbsp;一番[いちばん] &nbsp;可愛[かわいい] いです。|Cats are the cutest.
+漢字[かんじ] が &nbsp;一番[いちばん] &nbsp;難[むず]しいです。|kanji is the hardest.
+乗[の]り 物[もの] で &nbsp;何[なに] が &nbsp;一番[いちばん] &nbsp;早[はや]い ですか？|Of transportation, what type is the fastest?
+家族[かぞく] で &nbsp;誰[だれ] が &nbsp;一番[いちばん] &nbsp;性[せい] が &nbsp;高[た]い ですか？|In your family, who is the tallest?
+日本[にほん] で どこ が &nbsp;一番[いちばん] &nbsp;寒[さ]いですか？|In Japan, Where is the coldest?
+一週間[いちしゅうかん] で いつ が &nbsp;一番[いちばん] &nbsp;熱[あつ]い ですか？|In 1 week, when do you have the most free time?
+月曜日[げつようび] と &nbsp;木曜日[もくようび] と &nbsp;土曜日[どようび] で どれ が &nbsp;一番[いちばん] &nbsp;都合[つごう] が &nbsp;良[い]いですか？|Out of Monday, Thursday, and Saturday, which is the most convenient?
+ﾙｰ[るう]ﾌｨ[ふぃ] と &nbsp;イ[い]チ[ち]ゴ[ご] と &nbsp;ナ[な]ル[る]ト[と] で &nbsp;誰[だれ] が &nbsp;一番[いちばん] &nbsp;強[つよ]いですか？|Out of Luffy, Ichigo, and Naruto, who is the strongest?
+座[す]って 下[くだ]さい。|Please sit.
+急[おそ]いで &nbsp;下[くだ]さい。|Please hurry.
+ゆっくり &nbsp;話[はな]して &nbsp;下[くだ]さい。|Please speak slowly.
+私[わたし] は &nbsp;シャ[しゃ]ワー[わあ] を &nbsp;浴[あ]びて います。|I am taking a shower!
+彼[かれ] は &nbsp;本[ほん] を &nbsp;読[よ]んで います。|He is reading a book.
+彼[かれ] が &nbsp;私[わたし] の &nbsp;家[うち] へ &nbsp;来[き]て います。|he is coming to my house.
+私[わたし] は &nbsp;日本語[にほんご] を &nbsp;勉強[べんきょう]して います。|I am studing Japanese.
+スープ の &nbsp;作[つく]り 方[かた] が &nbsp;分[わ]かります。|I know how to make soup.
+漢字[かんじ] の &nbsp;読[よ]み 方[かた] が &nbsp;分[わ]かりません。|I don't know how to read kanji.
+丸[まる] は &nbsp;眠[ねむ]って います|Maru is sleeping.
+私[わたし] は &nbsp;結婚[けっこん]して いません。|I am not married.
+高校[こうこう] で &nbsp;働[はたら]いて います|I am working at a high school.
+私[わたし] は &nbsp;川崎[かわさき] に &nbsp;住[す]んで います。|I am living in Kawasaki.
+自転車[じてんしゃ] を &nbsp;持[も]って います。|I have/own a bike.
+インタラック の &nbsp;電話番号[でんわばんごう] を &nbsp;知[し]って いますか？|Do you know Interac's phone number?
+はい、 知[し]っています。|Yes, I know.
+いいえ、　 知[し]りません。|No, I don't know.
+若命さん[わかめ] の &nbsp;息子[むすこ] は &nbsp;幼稚園[ようちえん] に &nbsp;通[かよ]って います。|Wakame's son attends kindergarten.
+ポ[ぽ]ケ[け]モ[も]ン[ん]セ[せ]ン[ん]ター[たあ] で　 ポ[ぽ]ケ[け]モ[も]ン[ん] の ぬいぐる み を &nbsp;売[う]っています。|The pokemon center sells pokemon plushies.
+私 は &nbsp;毎朝[まいあさ] &nbsp;顔[かお] を &nbsp;洗[あら]って、 歯[は] を &nbsp;磨[みが]いて、 服[ふく] を &nbsp;着[き]ります。|every morning, I wash my face, brush my teeth, and put on clothes.
+水曜日[すいようび] &nbsp;元住吉駅[もとすみよしえき] へ &nbsp;行[い]って、 晩御飯[ばんごはん] を &nbsp;食[た]べて から、 日本語[にほんご] を &nbsp;勉強[べんきょう]します。|On Wednesdays. I go to motosumiyoshi, I eat dinner, and I study Japanese.
+家[うち] へ &nbsp;帰[かえ]って から、アイスクリーム &nbsp;を &nbsp;食[た]べます。|I will go home, then I'll eat dinner.
+昨日[きのう] YouTube を &nbsp;見[み]てから、 寝[ね]ました。|Yesterday, I watched YouTube, then went to bed.
+鈴木著駅[すずきちょえき] で &nbsp;電車[でんしゃ] に &nbsp;乗[の]って、 川崎駅[かわさきえき] で &nbsp;乗[の]り 換[か]えて から、　 鶴見駅[つるみえき] で &nbsp;降[お]ります。|At Suzukicho station I get on the train, at Kawasaki I transfer, and then I get off at tsurumi.
+おにぎり は &nbsp;安[やす]くて、 美味[おい]しい です。|Onigiri is cheap and delicious.
+この ゲーム は &nbsp;楽[たの]しくて、 簡単[かんたん] です。|This game is fun and easy.
+この ゲーム は &nbsp;簡単[かんたん] で、 楽[たの]しいです。|This game is easy and fun.
+日本人[にほんじん] は &nbsp;丁寧[ていねい]で、 親切[しんせつ]です。|Japanese people are polite and kind.
+私[わたし] は カナダ 人[じん] で、 英語[えいご] の &nbsp;先生[せんせい] です。|I am Canadian and an English teacher.
+焼肉[やきにく] は &nbsp;美味[おい]しい ですが、 高[たか]いです。|Yakiniku is delicious, but it is expensive.
+この ゲーム は &nbsp;簡単[かんたん] ですが、 詰[つ]まらない です。|This game is easy, but boring.
+写真[しゃしん] を &nbsp;撮[と]って もいいです。|It's okay to take a picture.
+ペット を &nbsp;飼[か]って もいいです。|It's okay to have/keep a pet.
+自転車[じてんしゃ] を &nbsp;止[と]めて もいいですか？|Is it okay to park bicycles here?
+ここ で &nbsp;タ[た]バ[ば]コ[こ] を &nbsp;吸[す]って は いけません。（禁煙[きんえん]）|Don't smoke here. (rule)
+ここ で &nbsp;入[はい]って は いけません。 (立入り禁止[たちいりきんし]）|Don't enter here. (rule)
+ここ で &nbsp;止[と]めて は いけません。 （駐車禁止[ちゅうしゃきんし]）|Don't park here.(rule)
+ここ で &nbsp;写真[しゃしん] を &nbsp;撮[と]って は いけません。 （撮影禁止[さつえいきんし]）|Don't take photos here. (rule)
+押[おさ]さない で下さい。|Please don't push.
+私[わたし] の カメラ を &nbsp;触[さわ]らない で 下[くだ]さい。|Please don't touch my camera.
+遅刻[ちこく]しない で下さい。|Please don't be late.
+忘[わす]れないで下さい。|Please don't forget.
+心配[しんぱい]しない で 下[くだ]さい。|Please don't worry.
+行[い]きましょうか？|Shall we go?
+寒[さむ]いです。 窓[まど] を &nbsp;閉[し]めましょうか？|It's cold. shall I close the window?
+はい、お 願[ねが]いします。|yes, please.
+いいえ、 結構[けっこう]です。ありがとうございます。|No thank you.
+払[はら]わな ければなりません。|You must pay.
+パスポート を 見[み]せな ければなりません。|You must show your passport.
+信号[しんごう] が &nbsp;赤[あか]ですから、 車[くるま] を &nbsp;止[と]まらな ければなりません。|The light is red, so you must stop.
+子供[こども] は &nbsp;払[はら]わな くてもいいです。|kids don't have to pay.
+心配[しんぱい]しな くてもいいです。|You don't have to worry.
+時間[じかん] が ありますから、 急[いそ]がなくて もいいです。|I have time, so I don't have to hurry.
+私[わたし] の &nbsp;趣味[しゅみ] は &nbsp;旅行[りょこう]する こと です。|My hobby is travelling.
+私[わたし] の &nbsp;趣味[しゅみ] は フルート を &nbsp;吹[ふ]く こと です。|My hobby is playing the flute.
+あなた の &nbsp;趣味[しゅみ] は &nbsp;何[なん]ですか？|What is your hobby?
+食事[しょくじ] の &nbsp;前[まえ]に、 手[て] を &nbsp;洗[あら]います。|Before a meal, I wash my hands.
+車[くるま] を &nbsp;運転[うんてん]する の &nbsp;前[まえ]に、お 酒[さけ] を &nbsp;飲[の]んで は いけません。|Before driving a car, don’t drink alcohol.
+四年[よんねん] &nbsp;前[まえ]に, &nbsp;結婚[けっこん]しました。|4 years ago, I got married.
+二年[にねん] &nbsp;前[まえ]に, &nbsp;日本[にほん] へ &nbsp;行[い]きました。|2 years ago, I came to Japan.
+車[くるま]の 運転[うんてん] が できます。|I can drive a car.
+英語[えいご] が できますか？|Can you (speak/understand) English?
+歌[うた]う こと が できます。|I can sing.
+漢字[かんじ] を &nbsp;読[よ]む こと が できます。|I can't read kanji.
+泳[およ]ぐ こと が できますか？|Can you swim?
+現金[げんきん] を &nbsp;払[はら]う こと が できますが、カード を &nbsp;払[はら]う こと が できません。|you can pay by cash, but not by card.
+クラス の &nbsp;後[あと]で, &nbsp;居酒屋[いざかや] へ 行[い]きます。|After class, a friend and I will go to an izakaya.
+仕事[しごと] の &nbsp;後[あと]で、お 酒[さけ] を &nbsp;飲[の]んで もいいです。|After work, it's okay to drink alcohol.
+ゲーム を した &nbsp;後[あと]で, &nbsp;寝[ね]ます。|After playing games, I will go to bed.
+カナダ へ &nbsp;帰[かえ]った &nbsp;後[あと]で, &nbsp;家族[かぞく] に &nbsp;会[あ]います。|After returning to Canada, I will meet with my family.
+日光[にっこう] へ &nbsp;紅葉[こうよう] を &nbsp;見[み] に &nbsp;行[い]きます。|I'm going to Nikko to  see the autumn leaves.
+センター へ &nbsp;日本語[にほんご] を &nbsp;習[なら]い に &nbsp;行[い]きます。|I'm coming to the Center to learn Japanese.
