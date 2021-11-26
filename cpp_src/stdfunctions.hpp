@@ -12,4 +12,4 @@ int randint(int max, int min);
 
 std::vector<std::string> readCSVRow(const std::string &row);
 
-int unzip_and_get_file(std::string file_to_unzip, std::string file_to_search_for);
+int unzip_and_get_file(const char *file_to_unzip, const char *file_to_search_for, const char *output_path);

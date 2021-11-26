@@ -77,7 +77,7 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
         if (res != CURLE_OK) return 1;
 
         // unzip the zip file we downloaded
-        
+        unzip_and_get_file(output_path_hiragana_char, "collection.anki2", output_path_hiragana_char_db);
 
         sqlite3* db_hiragana;
         int res_hiragana = sqlite3_open(output_path_hiragana_char_db, &db_hiragana);
