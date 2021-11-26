@@ -3,6 +3,7 @@
 #include <sqlite3.h>
 #include <iostream>
 #include <fstream>
+#include <algorithm>
 
 #include "stdfunctions.hpp"
 
@@ -12,7 +13,7 @@ using namespace std;
 
 int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::string &tmp_download_path, const int &curl_timeout_seconds) {
 
-    //https://gist.githubusercontent.com/katznboyz1/9c679680ca7e661a5bc6ae8fc2062bc9/raw/e1beecbdeba1006dd9c62543a687adc544727ab3/anki-1552733819.csv
+    std::string hiragana_all_chars = "あいうえおかきくけこがきぐげごさしすせそざじずぜぞたちつてとだぢづでどなにぬねのはひふへほばびぶべぼぱぴぷぺぽまみむめもやゆよらりるれろわん";
 
     CURL *curl[6];
     for (int i = 0; i < 6; i++) curl[i] = curl_easy_init();
@@ -63,13 +64,30 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
             ofstream anki_db_csv_output_file;
             anki_db_csv_output_file.open(category_data_path + output_files[i]);
             int current_line = 0;
+            char alphabet[27] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',' '};
 
             while (std::getline(anki_db_csv_input_file, line)) {
 
                 if (current_line != 0) {
                     
                     std::vector<std::string> split_line = string_split(line, '|');
-                    anki_db_csv_output_file << split_line[split_line.size() - 4][split_line[split_line.size() - 4].size()] << "|" << split_line[split_line.size() - 3] << "\n";
+                    std::string question_string = split_line[split_line.size() - 4];
+                    std::string japanese_char = "ERROR";
+                    
+                    // the files quite literally have a char length of 5666666666666666666666666667766676666666665555566666666666666666666666660 for this index
+                    // so I will need to manually find japanese chars
+                    for (int j = 0; j < hiragana_all_chars.size(); j++) {
+                        
+                        int char_position = split_line[split_line.size() - 4].find_first_of(hiragana_all_chars[j], 0);
+
+                        if (char_position != 0) {
+
+                            japanese_char = split_line[split_line.size() - 4][char_position];
+                            break;
+                        }
+                    }
+
+                    anki_db_csv_output_file << japanese_char << "|" << split_line[split_line.size() - 3] << "\n";
                 }
 
                 current_line++;
