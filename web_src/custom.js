@@ -94,7 +94,7 @@ function register_answer_click(row, col) {
         }
     }
 
-    question_index = Math.floor(Math.random() * document.quiz_data[col].length);
+    question_index = Math.floor(Math.random() * (document.quiz_data[col].length - 1));
 
     document.getElementById('peril-answer-page').style.visibility = 'visible';
     document.getElementById('peril-answer-page-reveal-answer').style.visibility = 'visible';
