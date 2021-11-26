@@ -13,7 +13,7 @@ using namespace std;
 
 int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::string &tmp_download_path, const int &curl_timeout_seconds) {
 
-    std::string hiragana_all_chars = "あいうえおかきくけこがきぐげごさしすせそざじずぜぞたちつてとだぢづでどなにぬねのはひふへほばびぶべぼぱぴぷぺぽまみむめもやゆよらりるれろわん";
+    std::wstring hiragana_all_chars = L"あいうえおかきくけこがきぐげごさしすせそざじずぜぞたちつてとだぢづでどなにぬねのはひふへほばびぶべぼぱぴぷぺぽまみむめもやゆよらりるれろわん";
 
     CURL *curl[6];
     for (int i = 0; i < 6; i++) curl[i] = curl_easy_init();
@@ -61,39 +61,38 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
 
             std::ifstream anki_db_csv_input_file(tmp_download_path + output_files[i]);
             std::string line;
-            ofstream anki_db_csv_output_file;
-            anki_db_csv_output_file.open(category_data_path + output_files[i]);
+            wofstream anki_db_csv_output_file(category_data_path + output_files[i]);
             int current_line = 0;
-            char alphabet[27] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',' '};
 
             while (std::getline(anki_db_csv_input_file, line)) {
 
                 if (current_line != 0) {
                     
                     std::vector<std::string> split_line = string_split(line, '|');
-                    std::string question_string = split_line[split_line.size() - 4];
-                    std::string japanese_char = "ERROR";
+                    std::string question_string_tmp = split_line[split_line.size() - 4];
+                    std::wstring question_string = std::wstring(question_string_tmp.begin(), question_string_tmp.end());
+                    std::string answer_string_tmp = split_line[split_line.size() - 3];
+                    std::wstring answer_string = std::wstring(answer_string_tmp.begin(), answer_string_tmp.end());
+                    std::wstring japanese_char;
                     
                     // the files quite literally have a char length of 5666666666666666666666666667766676666666665555566666666666666666666666660 for this index
                     // so I will need to manually find japanese chars
                     for (int j = 0; j < hiragana_all_chars.size(); j++) {
                         
-                        int char_position = split_line[split_line.size() - 4].find_first_of(hiragana_all_chars[j], 0);
+                        int char_position = question_string.find_first_of(hiragana_all_chars[j], 0);
 
                         if (char_position != 0) {
 
-                            japanese_char = split_line[split_line.size() - 4][char_position];
+                            japanese_char = question_string[char_position];
                             break;
                         }
                     }
 
-                    anki_db_csv_output_file << japanese_char << "|" << split_line[split_line.size() - 3] << "\n";
+                    anki_db_csv_output_file << japanese_char << "|" << answer_string << "\n";
                 }
 
                 current_line++;
             }
-
-            anki_db_csv_output_file.close();
         }
     }
 
