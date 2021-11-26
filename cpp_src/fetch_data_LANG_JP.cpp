@@ -69,7 +69,7 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
                 if (current_line != 0) {
                     
                     std::vector<std::string> split_line = string_split(line, '|');
-                    anki_db_csv_output_file << split_line[split_line.size() - 4][split_line[split_line.size() - 4].size() - 1] << "|" << split_line[split_line.size() - 3] << "\n";
+                    anki_db_csv_output_file << split_line[split_line.size() - 4][split_line[split_line.size() - 4].size()] << "|" << split_line[split_line.size() - 3] << "\n";
                 }
 
                 current_line++;
