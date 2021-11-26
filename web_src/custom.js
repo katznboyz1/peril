@@ -100,7 +100,7 @@ function register_answer_click(row, col) {
     document.getElementById('peril-answer-page-reveal-answer').style.visibility = 'visible';
     document.getElementById('peril-answer-page-return-to-board').style.visibility = 'hidden';
     document.getElementById('peril-answer-page-question').innerHTML = document.quiz_data[col][question_index].split(/[|]/)[0].replace('<', '&lt;').replace('>', '&gt;');
-    document.getElementById('peril-answer-page-answer').innerHTML = 'What is: "' + document.quiz_data[col][question_index].split(/[|]/)[1].replace('<', '&lt;').replace('>', '&gt;') + '".';
+    document.getElementById('peril-answer-page-answer').innerHTML = 'What is: "' + document.quiz_data[col][question_index].split(/[|]/)[1].replace('<', '&lt;').replace('>', '&gt;') + '"';
 
     document.quiz_data[col].splice(question_index, 1);
 }
