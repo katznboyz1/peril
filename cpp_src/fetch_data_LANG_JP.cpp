@@ -2,6 +2,7 @@
 #include <curl/curl.h>
 #include <sqlite3.h>
 #include <iostream>
+#include <fstream>
 
 #include "stdfunctions.hpp"
 
@@ -56,6 +57,25 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
             curl_easy_cleanup(curl[i]);
 
             fclose(files[i]);
+
+            std::ifstream anki_db_csv_input_file(tmp_download_path + output_files[i]);
+            std::string line;
+            ofstream anki_db_csv_output_file;
+            anki_db_csv_output_file.open(category_data_path + output_files[i]);
+            int current_line = 0;
+
+            while (std::getline(anki_db_csv_input_file, line)) {
+
+                if (current_line != 0) {
+                    
+                    std::vector<std::string> split_line = string_split(line, '|');
+                    anki_db_csv_output_file << split_line[split_line.size() - 4][split_line[split_line.size() - 4].size() - 1] << "|" << split_line[split_line.size() - 3] << "\n";
+                }
+
+                current_line++;
+            }
+
+            anki_db_csv_output_file.close();
         }
     }
 
