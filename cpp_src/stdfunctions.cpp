@@ -46,7 +46,7 @@ int randint(int min, int max) {
 }
 
 // from https://stackoverflow.com/a/10440251
-std::string unzip_and_get_file(const char *file_to_unzip, const char *file_to_search_for) {
+char* unzip_and_get_file(const char *file_to_unzip, const char *file_to_search_for) {
 
     //Open the ZIP archive
     int err = 0;
@@ -69,9 +69,7 @@ std::string unzip_and_get_file(const char *file_to_unzip, const char *file_to_se
     //And close the archive
     zip_close(z);
 
-    std::string output(contents);
-
-    return output;
+    return contents;
 }
 
 // from https://stackoverflow.com/a/30338543
