@@ -10,7 +10,7 @@
 
 - French
 
-- Japanese (work in progress)
+- Japanese
 
 ## TODO:
 

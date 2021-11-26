@@ -1,6 +1,6 @@
 {
     "quizzes":[
         ["manifest.lang.fr.json", "French"],
-        ["manifest.lang.jp.json", "Japanese (NOT COMPLETE)"]
+        ["manifest.lang.jp.json", "Japanese"]
     ]
 }
