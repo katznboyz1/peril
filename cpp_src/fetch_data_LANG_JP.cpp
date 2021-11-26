@@ -75,15 +75,15 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
                         if (i == 0) anki_db_csv_output_file << split_line[split_line.size() - 5] << "|" << split_line[split_line.size() - 4] << newline;
                         if (i == 1) anki_db_csv_output_file << split_line[split_line.size() - 4] << "|" << split_line[split_line.size() - 5] << newline;
 
-                    } else if (i == 2 || i == 3 || i == 4) {
+                    } else if (i == 2 || i == 3 || i == 5) {
 
                         std::vector<std::string> split_line = readCSVRow(line);
                         std::string answer;
                         if (i == 2) answer = string_split(split_line[split_line.size() - 5], '\037')[3];
-                        if (i == 3 || i == 4) answer = string_split(split_line[split_line.size() - 5], '|')[1];
+                        if (i == 3 || i == 5) answer = string_split(split_line[split_line.size() - 5], '|')[1];
 
                         if (i == 2) anki_db_csv_output_file << split_line[split_line.size() - 4] << "|" << answer << newline;
-                        if (i == 3 || i == 4) anki_db_csv_output_file << answer << "|" << split_line[split_line.size() - 4] << newline;
+                        if (i == 3 || i == 5) anki_db_csv_output_file << answer << "|" << split_line[split_line.size() - 4] << newline;
                     }
                 }
 
