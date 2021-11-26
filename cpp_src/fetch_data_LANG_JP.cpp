@@ -27,8 +27,8 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
             "https://gist.githubusercontent.com/katznboyz1/8d4ed9d8b7fa43f20a1eef97db88de32/raw/652294fad46d48e24967250fe9eec945edc2c20f/anki-1770270429.csv",
             "https://gist.githubusercontent.com/katznboyz1/a413cb17bcd033c7c955166d60afd781/raw/0a42632ef54808d25f11d63cea1789fa6b94234c/anki-1142282583.csv",
             "https://gist.githubusercontent.com/katznboyz1/9255cdb41fd633d97295c1507a422855/raw/8ef8c34d3c9e49134ce6d42cdf784a7b9ec3b911/anki-2003963453.csv",
-            "https://gist.githubusercontent.com/katznboyz1/d495c5f6a8807ef9355972db455e6b02/raw/0a4fddbf50d03effe3c00a37f9c2b73db055c874/anki-4625398.csv",
-            "about:blank"
+            "about:blank",
+            "https://gist.githubusercontent.com/katznboyz1/d495c5f6a8807ef9355972db455e6b02/raw/0a4fddbf50d03effe3c00a37f9c2b73db055c874/anki-4625398.csv"
         };
 
         std::string output_files[6];
