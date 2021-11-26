@@ -1,0 +1,18 @@
+good morning|おはよう
+おはようございます|good morning (polite)
+こんにちは|Good afternoon.
+こんばんは|Good evening.
+さようなら|good-bye
+おやすみ（なさい）|Good night.
+ありがと|thank you
+ありがとうございます|thank you (polite)
+すみません|excuse me; I'm sorry
+いいえ|no; not at all
+いってきます|I'll go and come back.
+いってらっしゃい|Please go and come back.
+ただいま|I'm home.
+おかえり（なさい）|Welcome home.
+いただきます|Thank you for the meal. (before eating)
+ごちそうさま（でした）|Thank you for the meal. (after eating)
+はじめまして|How do you do?
+よろしくおねがいします|Nice to meet you.
