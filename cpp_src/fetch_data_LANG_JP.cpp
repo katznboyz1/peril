@@ -25,7 +25,7 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
         std::string urls[6] = {
             "https://gist.githubusercontent.com/katznboyz1/9c679680ca7e661a5bc6ae8fc2062bc9/raw/af616a91e36a0fef9e62115a49aa63c6a6c5268b/anki-1552733819.csv",
             "https://gist.githubusercontent.com/katznboyz1/8d4ed9d8b7fa43f20a1eef97db88de32/raw/652294fad46d48e24967250fe9eec945edc2c20f/anki-1770270429.csv",
-            "about:blank",
+            "https://gist.githubusercontent.com/katznboyz1/a413cb17bcd033c7c955166d60afd781/raw/0a42632ef54808d25f11d63cea1789fa6b94234c/anki-1142282583.csv",
             "about:blank",
             "about:blank",
             "about:blank"
@@ -65,11 +65,23 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
             while (std::getline(anki_db_csv_input_file, line)) {
 
                 if (current_line != 0) {
-                    
-                    std::vector<std::string> split_line = readCSVRow(line);
 
-                    if (i == 0) anki_db_csv_output_file << split_line[split_line.size() - 5] << "|" << split_line[split_line.size() - 4] << "\n";
-                    if (i == 1) anki_db_csv_output_file << split_line[split_line.size() - 4] << "|" << split_line[split_line.size() - 5] << "\n";
+                    std::string newline = "\n";
+                    
+                    if (i == 0 || i == 1) {
+
+                        std::vector<std::string> split_line = readCSVRow(line);
+
+                        if (i == 0) anki_db_csv_output_file << split_line[split_line.size() - 5] << "|" << split_line[split_line.size() - 4] << newline;
+                        if (i == 1) anki_db_csv_output_file << split_line[split_line.size() - 4] << "|" << split_line[split_line.size() - 5] << newline;
+
+                    } else if (i == 2) {
+
+                        std::vector<std::string> split_line = readCSVRow(line);
+                        std::string answer = string_split(split_line[split_line.size() - 5], '\037')[3];
+
+                        anki_db_csv_output_file << split_line[split_line.size() - 4] << "|" << answer << newline;
+                    }
                 }
 
                 current_line++;

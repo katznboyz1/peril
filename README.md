@@ -38,6 +38,8 @@
 
 - https://ankiweb.net/shared/info/1770270429
 
+- https://ankiweb.net/shared/info/1142282583
+
 ## Build From Scratch:
 
 - Clone this repo, then make a new folder in the same directory as the cloned repo called *"peril"*.
