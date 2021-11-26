@@ -21,12 +21,19 @@
 ## Credits:
 
 - https://github.com/pquentin/wiktionary-translations/
+
 - https://github.com/curl/curl
+
 - https://github.com/ianmackinnon/inflect
+
 - https://github.com/twbs/bootstrap
+
 - https://github.com/jquery/jquery
+
 - https://github.com/popperjs/popper-core
-- https://github.com/madler/zlib
+
+- https://github.com/nih-at/libzip
+
 - https://ankiweb.net/shared/info/1552733819
 
 ## Build From Scratch:
