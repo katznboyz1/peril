@@ -24,7 +24,7 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
 
         std::string urls[6] = {
             "https://gist.githubusercontent.com/katznboyz1/9c679680ca7e661a5bc6ae8fc2062bc9/raw/af616a91e36a0fef9e62115a49aa63c6a6c5268b/anki-1552733819.csv",
-            "about:blank",
+            "https://gist.githubusercontent.com/katznboyz1/8d4ed9d8b7fa43f20a1eef97db88de32/raw/652294fad46d48e24967250fe9eec945edc2c20f/anki-1770270429.csv",
             "about:blank",
             "about:blank",
             "about:blank",
@@ -68,7 +68,8 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
                     
                     std::vector<std::string> split_line = readCSVRow(line);
 
-                    anki_db_csv_output_file << split_line[split_line.size() - 5] << "|" << split_line[split_line.size() - 4] << "\n";
+                    if (i == 0) anki_db_csv_output_file << split_line[split_line.size() - 5] << "|" << split_line[split_line.size() - 4] << "\n";
+                    if (i == 1) anki_db_csv_output_file << split_line[split_line.size() - 4] << "|" << split_line[split_line.size() - 5] << "\n";
                 }
 
                 current_line++;
