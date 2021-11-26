@@ -30,6 +30,8 @@ std::vector<std::string> string_split(std::string str, char delimiter) {
 
             last_string += str[i];
         }
+
+        if (i == str.size() - 1 && last_string != "") split_strings.push_back(last_string);
     }
 
     return split_strings;
