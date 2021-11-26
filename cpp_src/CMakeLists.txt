@@ -22,7 +22,6 @@ set_target_properties(source PROPERTIES LINKER_LANGUAGE CXX)
 
 target_link_libraries(peril source)
 target_link_libraries(peril -lcurl)
-target_link_libraries(peril -lsqlite3)
 target_link_libraries(peril -lzip)
 target_link_libraries(peril -licuuc)
 
