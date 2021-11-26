@@ -24,5 +24,7 @@ target_link_libraries(peril source)
 target_link_libraries(peril -lcurl)
 target_link_libraries(peril -lsqlite3)
 target_link_libraries(peril -lzip)
+target_link_libraries(peril -lboost_regex)
+target_link_libraries(peril -lboost_iostreams)
 
 set_target_properties(peril PROPERTIES COMPILE_OPTIONS "-O2;-std=c++17;")
