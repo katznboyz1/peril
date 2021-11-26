@@ -4,7 +4,7 @@
         "Katakana":"data.katakana.lang.jp.txt",
         "Kanji":"data.kanji.lang.jp.txt",
         "Words":"data.words.lang.jp.txt",
-        "Greetings":"data.greetings.lang.jp.txt",
+        "Sentences":"data.sentences.lang.jp.txt",
         "Phrases":"data.phrases.lang.jp.txt"
     },
     "quiz_version":"1.0",

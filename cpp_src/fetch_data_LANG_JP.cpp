@@ -36,7 +36,7 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
         output_files[1] = LANG_JP_DATA_KATAKANA;
         output_files[2] = LANG_JP_DATA_KANJI;
         output_files[3] = LANG_JP_DATA_WORDS;
-        output_files[4] = LANG_JP_DATA_GREETINGS;
+        output_files[4] = LANG_JP_DATA_SENTENCES;
         output_files[5] = LANG_JP_DATA_PHRASES;
 
         for (int i = 0; i < 6; i++) {
