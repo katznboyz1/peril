@@ -92,6 +92,8 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
             }
 
             anki_db_csv_output_file.close();
+
+            remove((tmp_download_path + output_files[i]).c_str());
         }
     }
 
