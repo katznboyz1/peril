@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <algorithm>
-#include <boost/regex.hpp>
+#include <boost/regex/icu.hpp>
 
 #include "stdfunctions.hpp"
 
@@ -75,14 +75,15 @@ int fetch_data_LANG_JP_all(const std::string &category_data_path, const std::str
                     std::string answer_string_tmp = split_line[split_line.size() - 3];
                     std::wstring answer_string = std::wstring(answer_string_tmp.begin(), answer_string_tmp.end());
                     std::wstring japanese_char;
-                    boost::wregex japanese_char_regex(L"[ぁ-ゔ]");
+                    boost::u32regex japanese_char_regex = boost::make_u32regex(L"[ぁ-ゔ]");
                     
                     // the files quite literally have a char length of 5666666666666666666666666667766676666666665555566666666666666666666666660 for this index
                     // so I will need to manually find japanese chars    
-                    boost::wsmatch match;
-                    if (boost::regex_search(question_string, match, japanese_char_regex)) {
+                    boost::wsmatch matchU32;
+                    if (boost::u32regex_search(question_string, matchU32, japanese_char_regex)) {
 
-                        japanese_char = match.str();
+                        std::cout << "a" << endl;
+                        japanese_char = matchU32.str();
                     }
 
                     anki_db_csv_output_file << japanese_char << "|" << answer_string << "\n";
